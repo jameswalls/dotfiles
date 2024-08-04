@@ -10,7 +10,7 @@ return {
 		require("telescope").setup({
 			defaults = {
 				wrap_results = false,
-				path_display = { "truncate" },
+				path_display = { "filename_first" },
 			},
 			pickers = {
 				find_files = {
