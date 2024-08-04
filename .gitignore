@@ -4,3 +4,6 @@ tmux/.config/tmux/layouts/
 wezterm/.config/wezterm/*.jpg
 wezterm/.config/wezterm/*.png
 wezterm/.config/wezterm/*.jpeg
+
+nvim/.config/nvim/*/packer_compiled.lua
+nvim/.config/nvim/*.json
