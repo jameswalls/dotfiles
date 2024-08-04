@@ -1,2 +1,6 @@
 tmux/.config/tmux/plugins/
 tmux/.config/tmux/layouts/
+
+wezterm/.config/wezterm/*.jpg
+wezterm/.config/wezterm/*.png
+wezterm/.config/wezterm/*.jpeg
