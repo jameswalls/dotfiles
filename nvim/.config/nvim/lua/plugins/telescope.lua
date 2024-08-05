@@ -9,7 +9,7 @@ return {
 	config = function()
 		require("telescope").setup({
 			defaults = {
-				wrap_results = false,
+				wrap_results = true,
 				path_display = { "filename_first" },
 			},
 			pickers = {
