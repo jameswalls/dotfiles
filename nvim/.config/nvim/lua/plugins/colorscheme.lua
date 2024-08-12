@@ -4,6 +4,7 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function()
+			local palette = require 'nordic.colors'
 			require 'nordic' .setup {
 				-- This callback can be used to override the colors used in the palette.
 				on_palette = function(palette) return palette end,
@@ -20,7 +21,14 @@ return {
 				-- Swap the dark background with the normal one.
 				swap_backgrounds = false,
 				-- Override the styling of any highlight group.
-				override = {},
+				override = {
+					Visual = {
+						bg = palette.grey4,
+					},
+					CursorLineNr = {
+						fg = palette.white0
+					}
+				},
 				-- Cursorline options.  Also includes visual/selection.
 				cursorline = {
 					-- Bold font in cursorline.
@@ -30,7 +38,7 @@ return {
 					-- Available styles: 'dark', 'light'.
 					theme = 'dark',
 					-- Blending the cursorline bg with the buffer bg.
-					blend = 0.85,
+					blend = 1,
 				},
 				noice = {
 					-- Available styles: `classic`, `flat`.
@@ -49,6 +57,7 @@ return {
 					dark_background = true,
 				}
 			}
+			vim.o.termguicolors = true
 			require 'nordic' .load()
 		end
 	}
