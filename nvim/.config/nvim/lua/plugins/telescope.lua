@@ -21,7 +21,7 @@ return {
 				},
 				lsp_references = {
 					theme = "dropdown",
-				}
+				},
 			},
 			extensions = {
 				fzf = {

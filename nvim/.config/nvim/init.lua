@@ -32,6 +32,7 @@ vim.opt.wrap = false
 vim.opt.hlsearch = false
 vim.opt.cursorlineopt = "number"
 vim.opt.cursorline = true
+vim.o.termguicolors = true
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
