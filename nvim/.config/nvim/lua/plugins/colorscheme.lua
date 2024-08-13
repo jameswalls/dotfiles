@@ -78,7 +78,7 @@ return {
 				no_underline = false, -- Force no underline
 				styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
 					comments = {}, -- Change the style of comments
-					conditionals = {},
+					conditionals = { "bold" },
 					loops = { "bold" },
 					functions = {},
 					keywords = { "bold" },
@@ -88,7 +88,7 @@ return {
 					booleans = { "bold" },
 					properties = {},
 					types = {},
-					operators = {},
+					operators = { "bold" },
 					-- miscs = {}, -- Uncomment to turn off hard-coded styles
 				},
 				color_overrides = {},
