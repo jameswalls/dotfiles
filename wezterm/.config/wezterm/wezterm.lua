@@ -77,6 +77,7 @@ local setup_background = function()
 end
 
 local wezterm = require('wezterm')
+local mux = wezterm.mux
 
 local config = wezterm.config_builder()
 config.initial_rows = 25
@@ -113,4 +114,10 @@ config.background = setup_background()
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.color_scheme = "catppuccin-mocha"
+
+wezterm.on('gui-startup', function(cmd)
+  local tab, pane, window = mux.spawn_window(cmd or {})
+  window:gui_window():maximize()
+end)
+
 return config
