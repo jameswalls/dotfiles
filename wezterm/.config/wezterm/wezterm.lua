@@ -110,5 +110,5 @@ config.window_padding = {
 }
 config.colors = palette
 config.background = setup_background()
-config.window_decorations = "RESIZE"
+config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 return config
