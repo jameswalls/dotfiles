@@ -108,7 +108,9 @@ config.window_padding = {
   top = "0.1cell",
   bottom = "0.1cell",
 }
-config.colors = palette
+-- config.colors = palette
 config.background = setup_background()
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
+config.window_close_confirmation = 'NeverPrompt'
+config.color_scheme = "catppuccin-mocha"
 return config
