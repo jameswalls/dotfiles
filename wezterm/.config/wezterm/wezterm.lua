@@ -60,19 +60,16 @@ local setup_background = function()
 		}
 		table.insert(background, background_image)
 		opacity = 0.70
-	else
-		opacity = 1
+
+		table.insert(background, {
+			source = {
+				Color = palette.background
+			},
+			width = "100%",
+			height = "100%",
+			opacity = opacity,
+		})
 	end
-
-	table.insert(background, {
-		source = {
-			Color = palette.background
-		},
-		width = "100%",
-		height = "100%",
-		opacity = opacity,
-	})
-
 	return background
 end
 
@@ -88,7 +85,7 @@ config.hide_tab_bar_if_only_one_tab = true
 local font_family = "JetBrains Mono"
 config.font = wezterm.font({
 	family = font_family,
-	weight = "DemiBold",
+	weight = "Medium",
 	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
 })
 config.font_rules = {
@@ -97,7 +94,7 @@ config.font_rules = {
 		italic = false,
 		font = wezterm.font({
 			family = font_family,
-			weight = "Black"
+			weight = "Bold"
 		})
 	}
 }
@@ -114,6 +111,7 @@ config.background = setup_background()
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.color_scheme = "catppuccin-mocha"
+config.force_reverse_video_cursor = true
 
 wezterm.on('gui-startup', function(cmd)
   local _, _, window = mux.spawn_window(cmd or {})
