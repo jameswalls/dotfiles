@@ -88,7 +88,7 @@ config.hide_tab_bar_if_only_one_tab = true
 local font_family = "JetBrains Mono"
 config.font = wezterm.font({
 	family = font_family,
-	weight = "Regular",
+	weight = "DemiBold",
 	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
 })
 config.font_rules = {
@@ -97,7 +97,7 @@ config.font_rules = {
 		italic = false,
 		font = wezterm.font({
 			family = font_family,
-			weight = "Bold"
+			weight = "Black"
 		})
 	}
 }
