@@ -116,7 +116,7 @@ config.window_close_confirmation = 'NeverPrompt'
 config.color_scheme = "catppuccin-mocha"
 
 wezterm.on('gui-startup', function(cmd)
-  local tab, pane, window = mux.spawn_window(cmd or {})
+  local _, _, window = mux.spawn_window(cmd or {})
   window:gui_window():maximize()
 end)
 
