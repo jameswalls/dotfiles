@@ -82,7 +82,7 @@ config.initial_cols = 110
 
 config.hide_tab_bar_if_only_one_tab = true
 
-local font_family = "JetBrains Mono"
+local font_family = "JetBrainsMonoNL Nerd Font"
 config.font = wezterm.font({
 	family = font_family,
 	weight = "Medium",
