@@ -43,6 +43,7 @@ return {
 		local extensions = require("telescope").extensions
 
 		vim.keymap.set("n", "<leader>ff", builtin.find_files)
+		vim.keymap.set("n", "<leader>gf", builtin.git_files)
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags)
 		vim.keymap.set("n", "<leader>gs", builtin.grep_string)
 		vim.keymap.set("n", "<leader>dg", builtin.diagnostics)
