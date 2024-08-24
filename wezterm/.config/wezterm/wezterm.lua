@@ -59,7 +59,7 @@ local setup_background = function()
 			horizontal_align = "Center",
 		}
 		table.insert(background, background_image)
-		opacity = 0.70
+		opacity = 0.60
 
 		table.insert(background, {
 			source = {
