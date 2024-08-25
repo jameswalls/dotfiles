@@ -1,2 +1,2 @@
 # dotfiles
-Dotfile repo to be manage with [stow](https://formulae.brew.sh/formula/stow).
+Dotfile repo to be manage with [stow](https://www.gnu.org/software/stow/).
