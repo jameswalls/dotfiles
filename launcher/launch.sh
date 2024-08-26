@@ -35,7 +35,6 @@ if ! tmux has-session -t "$repo_name" 2>/dev/null; then
 	tmux send-keys -t $repo_name:2 "nvim ." C-m
 
 	tmux send-keys -t $repo_name:1 "clear" C-m
-	tmux send-keys -t $repo_name:2 "clear" C-m
 
 	tmux select-window -t $repo_name:1
 	tmux select-pane -t 1
