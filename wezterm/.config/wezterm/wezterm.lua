@@ -1,6 +1,6 @@
 local palette = {
 	foreground = "#ffffff",
-	background = "#000000",
+	background = "#14161b",
 	cursor_bg = "#e4e4e4",
 	cursor_fg = "#000000",
 	cursor_border = "#cbcaf6",
