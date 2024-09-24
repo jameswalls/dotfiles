@@ -16,6 +16,9 @@ return {
 				find_files = {
 					theme = "dropdown",
 				},
+				git_files = {
+					theme = "dropdown",
+				},
 				lsp_document_symbols = {
 					theme = "dropdown",
 				},
