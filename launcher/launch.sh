@@ -21,7 +21,7 @@ if ! tmux has-session -t "$repo_name" 2>/dev/null; then
 	tmux rename-window -t $repo_name:1 "terminal"
 	tmux new-window -t $repo_name:2 -n "nvim"
 
-	if [ -d venv ]; then
+	if [ -d .venv ]; then
 		tmux send-keys -t $repo_name:1 "source venv/bin/activate" C-m
 		tmux send-keys -t $repo_name:2 "source venv/bin/activate" C-m
 
