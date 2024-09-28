@@ -27,8 +27,8 @@ if ! tmux has-session -t "$repo_name" 2>/dev/null; then
 
 		if [ -d notebooks ]; then 
 			tmux new-window -t $repo_name:3 -n "jupyter-server"
-			tmux send-keys -t $repo_name:3 "source venv/bin/activate" C-m
-			tmux send-keys -t $repo_name:3 "jupyter lab" C-m
+			tmux send-keys -t $repo_name:3 "source .venv/bin/activate" C-m
+			tmux send-keys -t $repo_name:3 "jupyter notebook" C-m
 		fi
 	fi
 
