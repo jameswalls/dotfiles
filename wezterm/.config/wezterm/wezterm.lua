@@ -1,31 +1,30 @@
 local palette = {
-	foreground = "#ffffff",
+	foreground = "#e0e2ea",
 	background = "#14161b",
-	cursor_bg = "#e4e4e4",
-	cursor_fg = "#000000",
-	cursor_border = "#cbcaf6",
-	selection_bg = "#cacaf6",
-	selection_fg = "#000000",
-	split = "#8e8e8e",
+	cursor_bg = "#9b9ea4",
+	cursor_border = "#9b9ea4",
+	cursor_fg = "#e0e2ea",
+	selection_bg = "#4f5258",
+	selection_fg = "#e0e2ea",
 	ansi = {
-		"#616161",
-		"#ff8272",
-		"#b4fa72",
-		"#fefdc2",
-		"#a5d5fe",
-		"#ff8ffd",
-		"#d0d1fe",
-		"#f1f1f1",
+		"#07080d",
+		"#ffc0b9",
+		"#b3f6c0",
+		"#fce094",
+		"#a6dbff",
+		"#ffcaff",
+		"#8cf8f7",
+		"#eef1f8"
 	},
 	brights = {
-		"#8e8e8e",
-		"#ffc4bd",
-		"#d6fcb9",
-		"#fefdd5",
-		"#c1e3fe",
-		"#ffb1fe",
-		"#e5e6fe",
-		"#feffff",
+		"#4f5258",
+		"#ffc0b9",
+		"#b3f6c0",
+		"#fce094",
+		"#a6dbff",
+		"#ffcaff",
+		"#8cf8f7",
+		"#eef1f8"
 	}
 }
 
@@ -56,10 +55,10 @@ local setup_background = function()
 			source = {
 				File = wallpaper_path,
 			},
-			horizontal_align = "Center",
+			horizontal_align = "Right",
 		}
 		table.insert(background, background_image)
-		opacity = 0.60
+		opacity = 0.8
 
 		table.insert(background, {
 			source = {
@@ -106,12 +105,11 @@ config.window_padding = {
   top = "0.1cell",
   bottom = "0.1cell",
 }
--- config.colors = palette
 config.background = setup_background()
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
-config.color_scheme = "catppuccin-mocha"
 config.force_reverse_video_cursor = true
+config.bold_brightens_ansi_colors = true
 
 wezterm.on('gui-startup', function(cmd)
   local _, _, window = mux.spawn_window(cmd or {})
