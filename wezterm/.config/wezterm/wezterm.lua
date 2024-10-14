@@ -111,6 +111,10 @@ config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = true
 
+config.quick_select_patterns = {
+	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){10}-(?:\\w|\\d){5}",
+}
+
 wezterm.on('gui-startup', function(cmd)
   local _, _, window = mux.spawn_window(cmd or {})
   window:gui_window():maximize()
