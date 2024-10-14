@@ -30,6 +30,9 @@ local palette = {
 
 local function capture_command_output(command)
     local handle = io.popen(command)
+	if not handle then
+		error(command .. " did not return any output")
+	end
     local result = handle:read("*a")
     handle:close()
     return result:match("^%s*(.-)%s*$") -- Trim leading and trailing whitespace
