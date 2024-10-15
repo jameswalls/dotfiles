@@ -1,3 +1,4 @@
+local wezterm = require('wezterm')
 local palette = {
 	foreground = "#e0e2ea",
 	background = "#14161b",
@@ -48,34 +49,48 @@ local function file_exists(path)
 	end
 end
 
+local function get_appearance()
+	if wezterm.gui then
+		return wezterm.gui.get_appearance()
+	end
+	return 'Dark'
+end
+
+local function scheme_for_appearance(appearance)
+	if appearance:find 'Dark' then
+		return 'NvimDark'
+	else
+		return 'NvimLight'
+	end
+end
+
 local setup_background = function()
 	local username = capture_command_output("whoami")
 	local wallpaper_path = "/Users/" .. username .. "/.config/wezterm/wallpaper.jpg"
 	local background = {}
 	local opacity
-	if file_exists(wallpaper_path) then
-		local background_image = {
-			source = {
-				File = wallpaper_path,
-			},
-			horizontal_align = "Right",
-		}
-		table.insert(background, background_image)
-		opacity = 0.8
-
-		table.insert(background, {
-			source = {
-				Color = palette.background
-			},
-			width = "100%",
-			height = "100%",
-			opacity = opacity,
-		})
-	end
+	-- if file_exists(wallpaper_path) then
+	-- 	local background_image = {
+	-- 		source = {
+	-- 			File = wallpaper_path,
+	-- 		},
+	-- 		horizontal_align = "Right",
+	-- 	}
+	-- 	table.insert(background, background_image)
+	-- 	opacity = 0.8
+	--
+	-- 	table.insert(background, {
+	-- 		source = {
+	-- 			Color = palette.background
+	-- 		},
+	-- 		width = "100%",
+	-- 		height = "100%",
+	-- 		opacity = opacity,
+	-- 	})
+	-- end
 	return background
 end
 
-local wezterm = require('wezterm')
 local mux = wezterm.mux
 
 local config = wezterm.config_builder()
@@ -108,7 +123,8 @@ config.window_padding = {
   top = "0.1cell",
   bottom = "0.1cell",
 }
-config.background = setup_background()
+-- config.background = setup_background()
+config.color_scheme = scheme_for_appearance(get_appearance())
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
