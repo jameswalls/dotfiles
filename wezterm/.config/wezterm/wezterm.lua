@@ -82,25 +82,25 @@ local setup_background = function()
 	local wallpaper_path = "/Users/" .. username .. "/.config/wezterm/wallpaper.jpg"
 	local background = {}
 	local opacity
-	-- if file_exists(wallpaper_path) then
-	-- 	local background_image = {
-	-- 		source = {
-	-- 			File = wallpaper_path,
-	-- 		},
-	-- 		horizontal_align = "Right",
-	-- 	}
-	-- 	table.insert(background, background_image)
-	-- 	opacity = 0.8
-	--
-	-- 	table.insert(background, {
-	-- 		source = {
-	-- 			Color = palette.background
-	-- 		},
-	-- 		width = "100%",
-	-- 		height = "100%",
-	-- 		opacity = opacity,
-	-- 	})
-	-- end
+	if file_exists(wallpaper_path) then
+		local background_image = {
+			source = {
+				File = wallpaper_path,
+			},
+			horizontal_align = "Right",
+		}
+		table.insert(background, background_image)
+		opacity = 0.8
+
+		table.insert(background, {
+			source = {
+				Color = palette.background
+			},
+			width = "100%",
+			height = "100%",
+			opacity = opacity,
+		})
+	end
 	return background
 end
 
