@@ -7,6 +7,16 @@ return {
 		{ "nvim-telescope/telescope-live-grep-args.nvim" }
 	},
 	config = function()
+		local builtin = require("telescope.builtin")
+		local extensions = require("telescope").extensions
+
+		local function current_buffer_fuzzy_find()
+			builtin.current_buffer_fuzzy_find({fuzzy=true, case_mode="ignore_case"})
+		end
+
+		local function find_files()
+			builtin.find_files({find_command={"fd", "--type", "f", "--color", "never"}})
+		end
 		require("telescope").setup({
 			defaults = {
 				wrap_results = true,
@@ -42,10 +52,7 @@ return {
 
 		require("telescope").load_extension("fzf")
 
-		local builtin = require("telescope.builtin")
-		local extensions = require("telescope").extensions
-
-		vim.keymap.set("n", "<leader>ff", builtin.find_files)
+		vim.keymap.set("n", "<leader>ff", find_files)
 		vim.keymap.set("n", "<leader>gf", builtin.git_files)
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags)
 		vim.keymap.set("n", "<leader>gs", builtin.grep_string)
@@ -54,7 +61,7 @@ return {
 		vim.keymap.set("n", "<leader>bb", builtin.buffers)
 		vim.keymap.set("n", "<leader>cs", builtin.colorscheme)
 		vim.keymap.set("n", "<leader>qf", builtin.quickfix)
-		vim.keymap.set("n", "<leader>ss", function() builtin.current_buffer_fuzzy_find({fuzzy=true, case_mode="ignore_case"}) end)
+		vim.keymap.set("n", "<leader>ss", current_buffer_fuzzy_find)
 		vim.keymap.set("n", "<leader>fg", extensions.live_grep_args.live_grep_args)
 
 		require("telescope").load_extension("live_grep_args")
