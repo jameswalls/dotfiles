@@ -64,6 +64,19 @@ local function scheme_for_appearance(appearance)
 	end
 end
 
+local function get_font_weights(appearance)
+	-- https://wezfurlong.org/wezterm/config/lua/wezterm/font.html
+	local normal_weight, bold_weight
+	if appearance:find 'Dark' then
+		normal_weight = "Medium"
+		bold_weight = "ExtraBold"
+	else
+		normal_weight = "Medium"
+		bold_weight = "ExtraBold"
+	end
+	return normal_weight, bold_weight
+end
+
 local setup_background = function()
 	local username = capture_command_output("whoami")
 	local wallpaper_path = "/Users/" .. username .. "/.config/wezterm/wallpaper.jpg"
@@ -92,7 +105,7 @@ local setup_background = function()
 end
 
 local mux = wezterm.mux
-
+local appearance = get_appearance()
 local config = wezterm.config_builder()
 config.initial_rows = 25
 config.initial_cols = 110
@@ -100,9 +113,10 @@ config.initial_cols = 110
 config.hide_tab_bar_if_only_one_tab = true
 
 local font_family = "JetBrainsMonoNL Nerd Font"
+local font_weight, bold_weight = get_font_weights(appearance)
 config.font = wezterm.font({
 	family = font_family,
-	weight = "DemiBold",
+	weight = font_weight,
 	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
 })
 config.font_rules = {
@@ -111,7 +125,7 @@ config.font_rules = {
 		italic = false,
 		font = wezterm.font({
 			family = font_family,
-			weight = "ExtraBold"
+			weight = bold_weight,
 		})
 	}
 }
@@ -124,7 +138,7 @@ config.window_padding = {
   bottom = "0.1cell",
 }
 -- config.background = setup_background()
-config.color_scheme = scheme_for_appearance(get_appearance())
+config.color_scheme = scheme_for_appearance(appearance)
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
