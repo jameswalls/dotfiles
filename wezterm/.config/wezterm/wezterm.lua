@@ -102,7 +102,7 @@ config.hide_tab_bar_if_only_one_tab = true
 local font_family = "JetBrainsMonoNL Nerd Font"
 config.font = wezterm.font({
 	family = font_family,
-	weight = "Medium",
+	weight = "DemiBold",
 	harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
 })
 config.font_rules = {
@@ -111,11 +111,11 @@ config.font_rules = {
 		italic = false,
 		font = wezterm.font({
 			family = font_family,
-			weight = "Bold"
+			weight = "ExtraBold"
 		})
 	}
 }
-config.font_size = 21
+config.font_size = 18
 config.line_height = 1.1
 config.window_padding = {
   left = "0.5cell",
