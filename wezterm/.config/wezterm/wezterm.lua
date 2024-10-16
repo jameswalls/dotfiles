@@ -68,8 +68,8 @@ local function get_font_weights(appearance)
 	-- https://wezfurlong.org/wezterm/config/lua/wezterm/font.html
 	local normal_weight, bold_weight
 	if appearance:find 'Dark' then
-		normal_weight = "Medium"
-		bold_weight = "ExtraBold"
+		normal_weight = "Regular"
+		bold_weight = "Bold"
 	else
 		normal_weight = "Medium"
 		bold_weight = "ExtraBold"
@@ -129,7 +129,7 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 18
+config.font_size = 21
 config.line_height = 1.1
 config.window_padding = {
   left = "0.5cell",
