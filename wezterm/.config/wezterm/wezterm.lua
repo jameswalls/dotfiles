@@ -57,27 +57,33 @@ local function get_appearance()
 end
 
 local function scheme_for_appearance(appearance, sync_os)
-	if not sync_os or true then
-		return 'NvimDark'
-	elseif appearance:find 'Dark' then
-		return 'NvimDark'
+	local scheme
+	if sync_os or false then
+		if appearance:find 'Dark' then
+			scheme = 'NvimDark'
+		else
+			scheme = 'NvimLight'
+		end
 	else
-		return 'NvimLight'
+		scheme = 'NvimDark'
 	end
+	return scheme
 end
 
 local function get_font_weights(appearance, sync_os)
 	-- https://wezfurlong.org/wezterm/config/lua/wezterm/font.html
 	local normal_weight, bold_weight
-	if (not sync_os) or true then
-		normal_weight = "Medium"
-		bold_weight = "Bold"
-	elseif appearance:find 'Dark' then
-		normal_weight = "Regular"
-		bold_weight = "Bold"
+	if sync_os or false then
+		if appearance:find 'Dark' then
+			normal_weight = "Regular"
+			bold_weight = "Bold"
+		else
+			normal_weight = "Medium"
+			bold_weight = "ExtraBold"
+		end
 	else
 		normal_weight = "Medium"
-		bold_weight = "ExtraBold"
+		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
 end
