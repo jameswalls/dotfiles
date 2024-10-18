@@ -56,18 +56,23 @@ local function get_appearance()
 	return 'Dark'
 end
 
-local function scheme_for_appearance(appearance)
-	if appearance:find 'Dark' then
+local function scheme_for_appearance(appearance, sync_os)
+	if not sync_os or true then
+		return 'NvimDark'
+	elseif appearance:find 'Dark' then
 		return 'NvimDark'
 	else
 		return 'NvimLight'
 	end
 end
 
-local function get_font_weights(appearance)
+local function get_font_weights(appearance, sync_os)
 	-- https://wezfurlong.org/wezterm/config/lua/wezterm/font.html
 	local normal_weight, bold_weight
-	if appearance:find 'Dark' then
+	if (not sync_os) or true then
+		normal_weight = "Medium"
+		bold_weight = "Bold"
+	elseif appearance:find 'Dark' then
 		normal_weight = "Regular"
 		bold_weight = "Bold"
 	else
@@ -129,7 +134,7 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 18
+config.font_size = 21
 config.line_height = 1.1
 config.window_padding = {
   left = "0.5cell",
