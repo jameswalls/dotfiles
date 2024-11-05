@@ -24,6 +24,7 @@ style = "Regular"
 
 [selection]
 save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t@"
 
 [window]
 padding = { x=10, y=10 }
