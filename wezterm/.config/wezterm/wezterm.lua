@@ -123,8 +123,9 @@ config.initial_cols = 110
 
 config.hide_tab_bar_if_only_one_tab = true
 
+local sync_os = false
 local font_family = "JetBrainsMonoNL Nerd Font"
-local font_weight, bold_weight = get_font_weights(appearance)
+local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
 	family = font_family,
 	weight = font_weight,
@@ -149,7 +150,7 @@ config.window_padding = {
   bottom = "0.1cell",
 }
 -- config.background = setup_background()
-config.color_scheme = scheme_for_appearance(appearance)
+config.color_scheme = scheme_for_appearance(appearance, sync_os)
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
