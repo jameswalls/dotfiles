@@ -123,7 +123,7 @@ config.initial_cols = 110
 
 config.hide_tab_bar_if_only_one_tab = true
 
-local sync_os = false
+local sync_os = true
 local font_family = "JetBrainsMonoNL Nerd Font"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
