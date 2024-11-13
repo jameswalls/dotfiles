@@ -25,15 +25,19 @@ return {
 			pickers = {
 				find_files = {
 					theme = "dropdown",
+					previewer = false
 				},
 				git_files = {
 					theme = "dropdown",
+					previewer = false
 				},
 				lsp_document_symbols = {
 					theme = "dropdown",
+					previewer = false
 				},
 				lsp_references = {
 					theme = "dropdown",
+					previewer = false
 				},
 			},
 			extensions = {
