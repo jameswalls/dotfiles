@@ -151,7 +151,7 @@ config.window_padding = {
   bottom = "0.1cell",
 }
 -- config.background = setup_background()
-config.color_scheme = scheme_for_appearance(appearance, sync_os)
+-- config.color_scheme = scheme_for_appearance(appearance, sync_os)
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
