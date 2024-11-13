@@ -75,15 +75,15 @@ local function get_font_weights(appearance, sync_os)
 	local normal_weight, bold_weight
 	if sync_os or false then
 		if appearance:find 'Dark' then
-			normal_weight = "Medium"
+			normal_weight = "DemiBold"
 			bold_weight = "Bold"
 		else
-			normal_weight = "Medium"
+			normal_weight = "DemiBold"
 			bold_weight = "ExtraBold"
 		end
 	else
-		normal_weight = "Medium"
-		bold_weight = "Bold"
+		normal_weight = "DemiBold"
+		bold_weight = "ExtraBold"
 	end
 	return normal_weight, bold_weight
 end
@@ -123,7 +123,7 @@ config.initial_cols = 110
 
 config.hide_tab_bar_if_only_one_tab = true
 
-local sync_os = true
+local sync_os = false
 local font_family = "JetBrainsMonoNL Nerd Font"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
@@ -142,7 +142,8 @@ config.font_rules = {
 	}
 }
 config.font_size = 21
-config.line_height = 1.1
+config.line_height = 1.2
+config.cell_width = 1
 config.window_padding = {
   left = "0.5cell",
   right = "0.5cell",
