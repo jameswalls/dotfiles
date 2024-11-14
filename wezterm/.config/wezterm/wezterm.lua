@@ -145,8 +145,8 @@ config.font_size = 21
 config.line_height = 1.2
 config.cell_width = 1
 config.window_padding = {
-  left = "0.5cell",
-  right = "0.5cell",
+  left = "0.6cell",
+  right = "0.6cell",
   top = "0.1cell",
   bottom = "0.1cell",
 }
