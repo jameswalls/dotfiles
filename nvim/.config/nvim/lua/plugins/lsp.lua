@@ -56,6 +56,7 @@ return {
 
 		local servers = {
 			lua_ls = {
+				enabled = true,
 				settings = {
 					Lua = {
 						runtime = { version = "LuaJIT" },
@@ -71,6 +72,7 @@ return {
 				},
 			},
 			pylsp = {
+				enabled = false,
 				settings = {
 					pylsp = {
 						configurationSources = {"flake8"},
@@ -92,7 +94,9 @@ return {
 					}
 				}
 			},
-		rust_analyzer = {},
+			rust_analyzer = {
+				enabled = true,
+			},
 		}
 
 		require("mason").setup()
@@ -108,8 +112,10 @@ return {
 			handlers = {
 				function(server_name)
 					local server = servers[server_name] or {}
-					server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-					require("lspconfig")[server_name].setup(server)
+					if server["enabled"] then
+						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+						require("lspconfig")[server_name].setup(server)
+					end
 				end,
 			},
 		})
