@@ -72,18 +72,14 @@ return {
 				},
 			},
 			pylsp = {
-				enabled = false,
+				enabled = true,
+				filetypes = { "python" },
 				settings = {
 					pylsp = {
-						configurationSources = {"flake8"},
+						configurationSources = { "pycodestyle" },
 						plugins = {
 							pycodestyle = {
-								ignore = { "E501" },
-								flake8 = {
-									enabled = true,
-									exclude = { "*/.ipynb_checkpoints/*" },
-									ignore = { "E722", "E501"},
-								}
+								maxLineLength = 120,
 							},
 							jedi_completion = {
 								enabled = true,
