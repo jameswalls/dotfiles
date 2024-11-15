@@ -76,16 +76,16 @@ return {
 				filetypes = { "python" },
 				settings = {
 					pylsp = {
-						configurationSources = { "pycodestyle" },
 						plugins = {
 							pycodestyle = {
+								enabled = true,
 								maxLineLength = 120,
 							},
 							jedi_completion = {
 								enabled = true,
 								include_function_objects = false,
 								include_class_objects = false,
-							}
+							},
 						}
 					}
 				}
