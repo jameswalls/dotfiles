@@ -141,9 +141,9 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 21
+config.font_size = 18
 config.line_height = 1.2
-config.cell_width = 1
+config.cell_width = 0.95
 config.window_padding = {
   left = "0.6cell",
   right = "0.6cell",
