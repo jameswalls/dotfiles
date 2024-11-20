@@ -71,7 +71,7 @@ return {
 				},
 			},
 			pylsp = {
-				enabled = true,
+				enabled = false,
 				filetypes = { "python" },
 				settings = {
 					pylsp = {
@@ -92,6 +92,17 @@ return {
 			rust_analyzer = {
 				enabled = true,
 			},
+			pyright = {
+				enabled = true,
+				filetypes = { "python" },
+				python = {
+					analysis = {
+						autoSearchPaths = true,
+						diagnosticMode = "openFilesOnly",
+						useLibraryCodeForTypes = true
+					}
+				}
+			}
 		}
 
 		require("mason").setup()
