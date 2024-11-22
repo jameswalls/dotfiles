@@ -35,6 +35,7 @@ vim.opt.cursorline = true
 vim.o.termguicolors = true
 
 -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'Cursor', { gui=reverse})
 --
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
