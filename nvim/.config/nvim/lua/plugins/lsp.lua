@@ -44,8 +44,8 @@ return {
 				map("H", vim.lsp.buf.signature_help, "Signature [H]elp")
 				map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
 				map("<leader>e", vim.diagnostic.open_float, "Diagnostic float")
-				map("[d", vim.diagnostic.goto_prev, "Go to previous [D]iagnostic message")
-				map("]d", vim.diagnostic.goto_next, "Go to next [D]iagnostic message")
+				map("[d", function() vim.diagnostic.jump({ count = -1, float = true}) end, "Go to previous [D]iagnostic message")
+				map("]d", function() vim.diagnostic.jump({ count = 1, float = true}) end, "Go to next [D]iagnostic message")
 
 			end,
 		})
