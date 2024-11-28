@@ -82,8 +82,8 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "ExtraBold"
 		end
 	else
-		normal_weight = "DemiBold"
-		bold_weight = "ExtraBold"
+		normal_weight = "Regular"
+		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
 end
@@ -124,7 +124,7 @@ config.initial_cols = 110
 config.hide_tab_bar_if_only_one_tab = true
 
 local sync_os = false
-local font_family = "JetBrainsMonoNL Nerd Font"
+local font_family = "Hack"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
 	family = font_family,
