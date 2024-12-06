@@ -159,7 +159,7 @@ config.bold_brightens_ansi_colors = true
 config.window_background_opacity = 0.6
 
 config.quick_select_patterns = {
-	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){10}-(?:\\w|\\d){5}",
+	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d+)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){10}-(?:\\w|\\d){5}",
 	"(?:[a-z0-9]{16})",
 	"(?<=git\\().*?(?=\\))",
 }
