@@ -124,7 +124,7 @@ config.initial_cols = 110
 config.hide_tab_bar_if_only_one_tab = true
 
 local sync_os = false
-local font_family = "Hack"
+local font_family = "JetBrains Mono"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
 	family = font_family,
@@ -141,9 +141,9 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 18
+config.font_size = 21
 config.line_height = 1.2
-config.cell_width = 1
+config.cell_width = 1.0
 config.window_padding = {
   left = "0.6cell",
   right = "0.6cell",
