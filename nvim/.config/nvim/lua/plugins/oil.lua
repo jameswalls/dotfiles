@@ -12,9 +12,11 @@ return {
 			keymaps = {
 				["<C-p>"] = function() oil.open_preview({ horizontal=true }) end,
 				["g."] = "actions.toggle_hidden",
+				["<C-v>"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical split" },
+				["<C-x>"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a horizontal split" },
 			}
 		})
 
-		vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc="Open parent directory" })
+		vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 	end
 }
