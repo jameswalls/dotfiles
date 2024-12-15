@@ -156,7 +156,7 @@ config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = true
-config.window_background_opacity = 0.6
+config.window_background_opacity = 0.5
 
 config.quick_select_patterns = {
 	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d+)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){10}-(?:\\w|\\d){5}",
