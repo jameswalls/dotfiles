@@ -11,10 +11,12 @@ return {
 				keywords = { italic = false, bold=true },
 			},
 			on_highlights = function(hl, c)
+				hl.Visual = { bg= c.blue0 }
 				hl.LineNrAbove = { fg=c.blue }
 				hl.LineNrBelow = { fg=c.blue }
 				hl.DiagnosticVirtualTextError = { fg=c.red }
 				hl.DiagnosticVirtualTextHint = { fg=c.green1 }
+				hl.DiagnosticVirtualTextWarn = { fg=c.yellow }
 				hl.TelescopeNormal = {}
 				hl.TelescopeBorder = {}
 				hl.TelescopePromptBorder = {}
