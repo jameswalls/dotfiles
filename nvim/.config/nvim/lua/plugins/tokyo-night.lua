@@ -4,7 +4,7 @@ return {
 	priority = 1000,
 	config = function()
 		require("tokyonight").setup({
-			style = "storm",
+			style = "moon",
 			transparent = true,
 			styles = {
 				comments = { italic = false },
@@ -15,8 +15,9 @@ return {
 				hl.LineNrAbove = { fg=c.blue }
 				hl.LineNrBelow = { fg=c.blue }
 				hl.DiagnosticVirtualTextError = { fg=c.red }
-				hl.DiagnosticVirtualTextHint = { fg=c.green1 }
+				hl.DiagnosticVirtualTextHint = { fg=c.blue }
 				hl.DiagnosticVirtualTextWarn = { fg=c.yellow }
+				hl.DiagnosticUnnecessary = {}
 				hl.TelescopeNormal = {}
 				hl.TelescopeBorder = {}
 				hl.TelescopePromptBorder = {}
