@@ -1,0 +1,11 @@
+theme = catppuccin-mocha
+font-family = "JetBrains Mono"
+font-size = 21
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+shell-integration-features = no-cursor
+cursor-style = block
+macos-titlebar-style = hidden
+macos-window-shadow = false
+background-opacity = 0.8
