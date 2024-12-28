@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = vesper
 font-family = "JetBrains Mono"
 font-size = 21
 font-feature = -calt
@@ -8,4 +8,6 @@ shell-integration-features = no-cursor
 cursor-style = block
 macos-titlebar-style = hidden
 macos-window-shadow = false
+window-padding-x = 10
+adjust-cell-height = 11
 background-opacity = 0.8
