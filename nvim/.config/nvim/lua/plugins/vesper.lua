@@ -4,6 +4,7 @@ return {
 	priority = 1000,
 	name = "vesper",
 	config = function ()
+		local colors = require("vesper").palette
 		require("vesper").setup({
 			terminal_colors = true,
 			undercurl = true,
@@ -24,7 +25,11 @@ return {
 			inverse = true,
 			contrast = "",
 			palette_overrides = {},
-			overrides = {},
+			overrides = {
+				CursorLineNr = { bg='none', bold=true },
+				LineNr = { fg=colors.gray },
+				Visual = { bg=colors.dark4 },
+			},
 			dim_inactive = false,
 			transparent_mode = true,
 		})
