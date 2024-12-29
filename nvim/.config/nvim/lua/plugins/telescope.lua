@@ -57,7 +57,7 @@ return {
 		require("telescope").load_extension("fzf")
 
 		vim.keymap.set("n", "<leader>ff", find_files)
-		vim.keymap.set("n", "<leader>gf", builtin.git_files)
+		vim.keymap.set("n", "<leader>sf", builtin.git_files)
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags)
 		vim.keymap.set("n", "<leader>gs", builtin.grep_string)
 		vim.keymap.set("n", "<leader>dg", builtin.diagnostics)
