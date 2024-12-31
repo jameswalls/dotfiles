@@ -1,7 +1,7 @@
 return {
 	"catppuccin/nvim",
 	name = "catppuccin",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
@@ -40,6 +40,7 @@ return {
 			custom_highlights = function(colors)
 				return {
 					["@module"] = { style = {} },
+					LineNr = { fg=colors.surface2 },
 					TelescopeSelection = { bg = colors.surface1 },
 					DiagnosticVirtualTextError = { style = {} },
 					DiagnosticVirtualTextHint = { style = {} },
