@@ -152,23 +152,18 @@ config.window_padding = {
 }
 -- config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
-config.color_scheme = "Vesper"
+config.color_scheme = "nord"
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = true
-config.window_background_opacity = 0.7
+config.window_background_opacity = 0.8
 config.keys = {
 	{
 		key = '-',
 		mods = 'CTRL',
 		action = wezterm.action.DisableDefaultAssignment,
 	},
-	-- {
-	-- 	key = 'Space',
-	-- 	mods = 'CTRL|SHIFT',
-	-- 	action = 'DisableDefaultAssignment',
-	-- },
 	{
 		key = 'Space',
 		mods = 'CTRL|SHIFT',
