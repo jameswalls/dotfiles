@@ -142,7 +142,7 @@ config.font_rules = {
 	}
 }
 config.font_size = 21
-config.line_height = 1.2
+config.line_height = 1.1
 config.cell_width = 1.0
 config.window_padding = {
   left = "0.6cell",
@@ -152,20 +152,28 @@ config.window_padding = {
 }
 -- config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "Vesper"
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = true
 config.window_background_opacity = 0.8
 config.keys = {
-  -- Turn off the default CMD-m Hide action, allowing CMD-m to
-  -- be potentially recognized and handled by the tab
-  {
-    key = '-',
-    mods = 'CTRL',
-    action = wezterm.action.DisableDefaultAssignment,
-  },
+	{
+		key = '-',
+		mods = 'CTRL',
+		action = wezterm.action.DisableDefaultAssignment,
+	},
+	-- {
+	-- 	key = 'Space',
+	-- 	mods = 'CTRL|SHIFT',
+	-- 	action = 'DisableDefaultAssignment',
+	-- },
+	{
+		key = 'Space',
+		mods = 'CTRL|SHIFT',
+		action = wezterm.action.QuickSelect,
+	},
 }
 
 config.quick_select_patterns = {
