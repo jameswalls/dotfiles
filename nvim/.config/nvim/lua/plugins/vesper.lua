@@ -15,8 +15,9 @@ return {
 			},
 			palette_overrides = {},
 			overrides = {
-				CursorLineNr = { bg='none', bold=true },
 				Conditional = { fg=colors.borderDarker, bold=true },
+				CursorLineNr = { bg='none', bold=true },
+				NormalFloat = { bg='none' },
 				Statement = { fg=colors.borderDarker, bold=true },
 			},
 		})
