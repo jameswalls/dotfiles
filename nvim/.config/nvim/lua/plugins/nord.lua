@@ -1,6 +1,7 @@
 return {
-	"AlexvZyl/nordic.nvim",
-	lazy = false,
+	-- "AlexvZyl/nordic.nvim",
+	dir="~/projects/nordic.nvim/",
+	lazy = true,
 	priority = 1000,
 	config = function()
 		require("nordic").setup({
@@ -9,10 +10,11 @@ return {
 			reduced_blue = false,
 			bold_keywords = true,
 			on_highlight = function(highlights, palette)
-				highlights.CursorLineNr = { fg = palette.yellow.bright, bold = true }
-				highlights.LineNr = { fg = palette.grey5 }
-				highlights.TelescopeSelection = { fg=palette.yellow.bright, bg=palette.bg_selected, bold=true }
-				highlights['@parameter'] = { fg=palette.fg }
+				highlights["CursorLineNr"] = { fg = palette.yellow.bright, bold = true }
+				highlights["LineNr"] = { fg = palette.grey5 }
+				highlights["TelescopeSelection"] = { fg=palette.yellow.bright, bg=palette.bg_selected, bold=true }
+				highlights["@parameter"] = { fg=palette.fg }
+				highlights["lualine_c_inactive"] = { fg=palette.fg }
 			end,
 			telescope = {
 				style = "classic",
