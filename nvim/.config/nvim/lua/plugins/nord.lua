@@ -1,6 +1,5 @@
 return {
-	-- "AlexvZyl/nordic.nvim",
-	dir="~/projects/nordic.nvim/",
+	"AlexvZyl/nordic.nvim",
 	lazy = true,
 	priority = 1000,
 	config = function()
