@@ -141,7 +141,7 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 21
+config.font_size = 24
 config.line_height = 1.1
 config.cell_width = 1.0
 config.window_padding = {
@@ -172,7 +172,7 @@ config.keys = {
 }
 
 config.quick_select_patterns = {
-	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d+)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){10}-(?:\\w|\\d){5}",
+	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d+)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){8,10}-(?:\\w|\\d){5}",
 	"(?:[a-z0-9]{16})",
 	"(?<=git\\().*?(?=\\))",
 }
