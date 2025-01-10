@@ -13,7 +13,12 @@ return {
 				strings = false,
 				variables = false,
 			},
-			palette_overrides = {},
+			palette_overrides = {
+				greenLight = colors.red,
+				green = colors.redDark,
+				red = colors.greenLight,
+				redDark = colors.green
+			},
 			overrides = {
 				Conditional = { fg=colors.borderDarker, bold=true },
 				CursorLineNr = { bg='none', bold=true },
