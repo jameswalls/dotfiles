@@ -24,6 +24,7 @@ return {
 				CursorLineNr = { bg='none', bold=true },
 				NormalFloat = { bg='none' },
 				Statement = { fg=colors.borderDarker, bold=true },
+				TelescopeMatching = { fg=colors.yellowDark },
 			},
 		})
 		vim.cmd.colorscheme("vesper")
