@@ -18,6 +18,7 @@ vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.showmode = false
 vim.opt.breakindent = true
+vim.opt.autoindent = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes:1"
@@ -34,9 +35,10 @@ vim.opt.cursorlineopt = "number"
 vim.opt.cursorline = true
 vim.o.termguicolors = true
 
--- vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
--- vim.api.nvim_set_hl(0, 'Cursor', { gui=reverse})
---
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg='none' })
+
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
   group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
