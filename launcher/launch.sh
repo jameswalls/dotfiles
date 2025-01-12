@@ -32,12 +32,6 @@ if ! tmux has-session -t "$repo_name" 2>/dev/null; then
 	if [ -n "$VENV_DIR" ]; then
 		tmux send-keys -t $repo_name:1 "source ${VENV_DIR}/bin/activate" C-m
 		tmux send-keys -t $repo_name:2 "source ${VENV_DIR}/bin/activate" C-m
-
-		if [ -d notebooks ]; then 
-			tmux new-window -t $repo_name:3 -n "jupyter-server"
-			tmux send-keys -t $repo_name:3 "source ${VENV_DIR}/bin/activate" C-m
-			tmux send-keys -t $repo_name:3 "jupyter notebook" C-m
-		fi
 	fi
 
 	tmux send-keys -t $repo_name:2 "nvim ." C-m
