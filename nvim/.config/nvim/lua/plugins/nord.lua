@@ -1,24 +1,56 @@
 return {
-	"AlexvZyl/nordic.nvim",
+	"gbprod/nord.nvim",
 	lazy = true,
 	priority = 1000,
 	config = function()
-		require("nordic").setup({
-			transparent = { bg = true, float = true },
-			bright_border = true,
-			reduced_blue = false,
-			bold_keywords = true,
-			on_highlight = function(highlights, palette)
-				highlights["CursorLineNr"] = { fg = palette.yellow.bright, bold = true }
-				highlights["LineNr"] = { fg = palette.grey5 }
-				highlights["TelescopeSelection"] = { fg=palette.yellow.bright, bg=palette.bg_selected, bold=true }
-				highlights["@parameter"] = { fg=palette.fg }
-				highlights["lualine_c_inactive"] = { fg=palette.fg }
-			end,
-			telescope = {
-				style = "classic",
+		require("nord").setup({
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			transparent = true, -- Enable this to disable setting the background color
+			terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+			diff = { mode = "bg" }, -- enables/disables colorful backgrounds when used in diff mode. values : [bg|fg]
+			borders = true, -- Enable the border between verticaly split windows visible
+			errors = { mode = "bg" }, -- Display mode for errors and diagnostics
+			-- values : [bg|fg|none]
+			search = { theme = "vim" }, -- theme for highlighting search results
+			-- values : [vim|vscode]
+			styles = {
+				-- Style to be applied to different syntax groups
+				-- Value is any valid attr-list value for `:help nvim_set_hl`
+				comments = { italic=false },
+				keywords = { bold=true },
+				functions = {},
+				variables = {},
+
+				-- To customize lualine/bufferline
+				bufferline = {
+					current = {},
+					modified = {},
+				},
 			},
+
+			-- colorblind mode
+			-- see https://github.com/EdenEast/nightfox.nvim#colorblind
+			-- simulation mode has not been implemented yet.
+			colorblind = {
+				enable = false,
+				preserve_background = false,
+				severity = {
+					protan = 0.0,
+					deutan = 0.0,
+					tritan = 0.0,
+				},
+			},
+
+			-- Override the default colors
+			---@param colors Nord.Palette
+			on_colors = function(colors) end,
+
+			--- You can override specific highlights to use other groups or a hex color
+			--- function will be called with all highlights and the colorScheme table
+			---@param colors Nord.Palette
+			on_highlights = function(highlights, colors) end,
 		})
-		vim.cmd.colorscheme("nordic")
+		vim.cmd.colorscheme("nord")
 	end
 }
