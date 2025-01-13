@@ -1,6 +1,8 @@
 theme = vesper
+font-size = 18 
 font-family = "JetBrains Mono"
-font-size = 21
+font-variation = wght=600
+font-variation-bold = wght=700
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
@@ -9,5 +11,7 @@ cursor-style = block
 macos-titlebar-style = hidden
 macos-window-shadow = false
 window-padding-x = 10
+window-height = 25
+window-width = 100
 adjust-cell-height = 5
 background-opacity = 0.8
