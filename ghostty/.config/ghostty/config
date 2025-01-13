@@ -1,7 +1,7 @@
 theme = vesper
 font-size = 18 
 font-family = "JetBrains Mono"
-font-variation = wght=600
+font-variation = wght=500
 font-variation-bold = wght=700
 font-feature = -calt
 font-feature = -liga
