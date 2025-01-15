@@ -15,3 +15,5 @@ window-padding-x = 10
 # window-width = 100
 adjust-cell-height = 5
 background-opacity = 0.8
+copy-on-select = true
+
