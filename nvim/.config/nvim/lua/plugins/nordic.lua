@@ -3,10 +3,7 @@ return {
 	branch = "palette_completions",
 	lazy=true,
 	config = function()
-		require("nordic").setup({
-			on_palette = function(colors)
-			end
-		})
+		require("nordic").setup({})
 
 	vim.cmd.colorscheme("nordic")
 	end
