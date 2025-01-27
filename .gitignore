@@ -1,12 +1,12 @@
 k9s/.config/k9s/aliases.yaml
 k9s/.config/k9s/clusters/
 
+nvim/.config/nvim/*/packer_compiled.lua
+nvim/.config/nvim/*.json
+
 tmux/.config/tmux/plugins/
 tmux/.config/tmux/layouts/
 
 wezterm/.config/wezterm/*.jpg
 wezterm/.config/wezterm/*.png
 wezterm/.config/wezterm/*.jpeg
-
-nvim/.config/nvim/*/packer_compiled.lua
-nvim/.config/nvim/*.json
