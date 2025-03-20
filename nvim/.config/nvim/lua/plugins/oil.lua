@@ -34,7 +34,7 @@ return {
 				["g."] = "actions.toggle_hidden",
 				["<C-v>"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical split" },
 				["<C-x>"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a horizontal split" },
-				["<Esc>"] = function() oil.toggle_float() end,
+				["<Esc>"] = function() oil.close() end,
 			}
 		})
 
