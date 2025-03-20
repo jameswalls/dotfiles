@@ -175,6 +175,7 @@ config.quick_select_patterns = {
 	"(?:dev|qa|stage|prod|beauto)-\\w+-(?:vdevelop|v\\d+-\\d+-\\d+)-\\w+-v\\d+x-\\w+-\\w+-(?:\\w|\\d){8,10}-(?:\\w|\\d){5}",
 	"(?:[a-z0-9]{16})",
 	"(?<=git\\().*?(?=\\))",
+	"(?<=git:\\().*?(?=\\))",
 }
 
 wezterm.on('gui-startup', function(cmd)
