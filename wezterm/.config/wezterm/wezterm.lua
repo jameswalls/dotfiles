@@ -75,7 +75,7 @@ local function get_font_weights(appearance, sync_os)
 	local normal_weight, bold_weight
 	if sync_os or false then
 		if appearance:find 'Dark' then
-			normal_weight = "DemiBold"
+			normal_weight = "Regular"
 			bold_weight = "Bold"
 		else
 			normal_weight = "DemiBold"
@@ -141,12 +141,12 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 21
-config.line_height = 1.1
+config.font_size = 18
+config.line_height = 1.2
 config.cell_width = 1.0
 config.window_padding = {
-  left = "0.6cell",
-  right = "0.6cell",
+  left = "1cell",
+  right = "1cell",
   top = "0.1cell",
   bottom = "0.1cell",
 }
