@@ -10,3 +10,5 @@ tmux/.config/tmux/layouts/
 wezterm/.config/wezterm/*.jpg
 wezterm/.config/wezterm/*.png
 wezterm/.config/wezterm/*.jpeg
+
+**/.DS_Store
