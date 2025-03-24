@@ -1,5 +1,6 @@
 k9s/.config/k9s/aliases.yaml
 k9s/.config/k9s/clusters/
+**/k9s/screen-dumps/
 
 nvim/.config/nvim/*/packer_compiled.lua
 nvim/.config/nvim/*.json
