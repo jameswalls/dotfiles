@@ -58,7 +58,7 @@ end
 
 local function scheme_for_appearance(appearance, sync_os)
 	local scheme
-	if sync_os or false then
+	if sync_os then
 		if appearance:find 'Dark' then
 			scheme = 'NvimDark'
 		else
@@ -78,8 +78,8 @@ local function get_font_weights(appearance, sync_os)
 			normal_weight = "Regular"
 			bold_weight = "Bold"
 		else
-			normal_weight = "DemiBold"
-			bold_weight = "ExtraBold"
+			normal_weight = "Regular"
+			bold_weight = "Bold"
 		end
 	else
 		normal_weight = "Regular"
@@ -123,7 +123,7 @@ config.initial_cols = 110
 
 config.hide_tab_bar_if_only_one_tab = true
 
-local sync_os = false
+local sync_os = true
 local font_family = "JetBrains Mono"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
@@ -151,13 +151,13 @@ config.window_padding = {
   bottom = "0.1cell",
 }
 -- config.background = setup_background()
--- config.color_scheme = scheme_for_appearance(appearance, sync_os)
-config.color_scheme = "Vesper"
+config.color_scheme = scheme_for_appearance(appearance, sync_os)
+-- config.color_scheme = "Vesper"
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = true
-config.window_background_opacity = 0.8
+config.window_background_opacity = 1
 config.keys = {
 	{
 		key = '-',
