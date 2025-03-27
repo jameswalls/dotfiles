@@ -141,7 +141,7 @@ config.font_rules = {
 		})
 	}
 }
-config.font_size = 18
+config.font_size = 21
 config.line_height = 1.2
 config.cell_width = 1.0
 config.window_padding = {
@@ -150,7 +150,7 @@ config.window_padding = {
   top = "0.1cell",
   bottom = "0.1cell",
 }
--- config.background = setup_background()
+config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
 config.color_scheme = "Vesper"
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
