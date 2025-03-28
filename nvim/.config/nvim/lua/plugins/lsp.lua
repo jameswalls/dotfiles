@@ -125,5 +125,7 @@ return {
 				end,
 			},
 		})
+
+		-- vim.lsp.set_log_level("debug")
 	end
 }
