@@ -101,7 +101,6 @@ local setup_background = function()
 			horizontal_align = "Right",
 		}
 		table.insert(background, background_image)
-		opacity = 0.8
 
 		table.insert(background, {
 			source = {
@@ -109,8 +108,17 @@ local setup_background = function()
 			},
 			width = "100%",
 			height = "100%",
-			opacity = opacity,
 		})
+	else
+		table.insert(background, {
+			source = {
+				Color = palette.background
+			},
+			width = "100%",
+			height = "100%",
+			opacity = 0.85,
+		})
+
 	end
 	return background
 end
