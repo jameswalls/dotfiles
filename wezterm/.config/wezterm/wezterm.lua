@@ -158,7 +158,7 @@ config.window_padding = {
   top = "0.1cell",
   bottom = "0.1cell",
 }
-config.background = setup_background()
+-- config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
 config.color_scheme = "Vesper"
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
