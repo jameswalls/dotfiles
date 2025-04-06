@@ -1,6 +1,6 @@
 return {
 	"datsfilipe/vesper.nvim",
-	lazy = false,
+	lazy = true,
 	priority = 1000,
 	config = function ()
 		local colors = require("vesper.colors")
