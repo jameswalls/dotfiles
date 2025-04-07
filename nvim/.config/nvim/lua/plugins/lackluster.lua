@@ -16,7 +16,7 @@ return {
 				telescope = "none",
 			},
 			tweak_highlight = {
-				OilDir = { fg = color.blue },
+				OilDir = { fg = color.gray7 },
 				["@keyword"] = { bold = true },
 				["@keyword.exception"] = { bold = true },
 				["@keyword.return"] = { bold = true }
