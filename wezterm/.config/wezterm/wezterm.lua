@@ -127,7 +127,7 @@ local mux = wezterm.mux
 local appearance = get_appearance()
 local config = wezterm.config_builder()
 config.initial_rows = 25
-config.initial_cols = 110
+config.initial_cols = 85
 
 config.hide_tab_bar_if_only_one_tab = true
 
