@@ -185,6 +185,7 @@ config.quick_select_patterns = {
 	"(?<=git\\().*?(?=\\))",
 	"(?<=git:\\().*?(?=\\))",
 }
+config.quit_when_all_windows_are_closed = false
 
 wezterm.on('gui-startup', function(cmd)
   local _, _, window = mux.spawn_window(cmd or {})
