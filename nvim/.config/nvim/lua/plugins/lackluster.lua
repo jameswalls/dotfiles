@@ -17,6 +17,7 @@ return {
 			},
 			tweak_highlight = {
 				OilDir = { fg = color.gray7 },
+				["@property.json"] = { fg = color.gray7 },
 				["@keyword"] = { bold = true },
 				["@keyword.exception"] = { bold = true },
 				["@keyword.return"] = { bold = true }
