@@ -3,7 +3,7 @@ return {
 	lazy=false,
 	config = function()
 		require("colorizer").setup({
-			"lua";
+			"lua", "json";
 		})
 	end
 }
