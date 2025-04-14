@@ -1,0 +1,58 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+b n",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.focusNextGroup",
+        "workbench.action.toggleMaximizeEditorGroup",
+      ]
+    }
+  },
+  {
+    "key": "escape",
+    "command": "runCommands",
+    "when": "!editorFocus && !terminalFocus",
+    "args": {
+      "commands": [
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.closeSidebar"
+      ]
+    }
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "notebook.focusNextEditor",
+  },
+  {
+    "key": "ctrl+k",
+    "command": "notebook.focusPreviousEditor",
+  },
+  // open copilot chat
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  // open file from explorer
+  {
+    "key": "enter",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "explorer.openAndPassFocus",
+        "workbench.action.closeSidebar"
+      ]
+    }
+  }
+]
