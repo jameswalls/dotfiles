@@ -1,0 +1,169 @@
+{
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "\\",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [ "j", "k" ],
+      "after": [ "<Esc>" ]
+    },
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [ "<leader>", "d", "s" ],
+      "commands": [ "workbench.action.gotoSymbol" ],
+    },
+    // open file explorer at current file
+    {
+      "before": [ "-" ],
+      "commands": [ "workbench.files.action.showActiveFileInExplorer"]
+    },
+    // add context to copilot
+    {
+      "before": [ "<leader>", "c" ],
+      "commands": [ "github.copilot.chat.attachSelection", "workbench.action.focusActiveEditorGroup" ]
+    },
+    // jupyter navigation
+    {
+      "before": [ "<C-j>" ],
+      "commands": [ "notebook.focusNextEditor" ]
+    },
+    {
+      "before": [ "<C-k>" ],
+      "commands": [ "jupyter.gotoPrevCellInFile" ]
+    },
+    // focus next/previous opened file
+    {
+      "before": [ "<leader>", "n"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": [ "<leader>", "p"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    // harpoon like commands
+    {
+      "before": [ "<space>", "a"],
+      "commands": ["workbench.action.openEditorAtIndex1"]
+    },
+    {
+      "before": [ "<space>", "s"],
+      "commands": ["workbench.action.openEditorAtIndex2"]
+    },
+    {
+      "before": [ "<space>", "d"],
+      "commands": ["workbench.action.openEditorAtIndex3"]
+    },
+    {
+      "before": [ "<space>", "f"],
+      "commands": ["workbench.action.openEditorAtIndex4"]
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [ "<leader>", "c" ],
+      "commands": [ "github.copilot.chat.attachSelection", "workbench.action.focusActiveEditorGroup" ],
+      "after": [ "<Esc>" ]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.cursorStylePerMode.insert": "block",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "block",
+  "vim.cursorStylePerMode.visualblock": "block",
+  "vim.cursorStylePerMode.visualline": "block",
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/opt/homebrew/bin/nvim",
+  "vim.neovimConfigPath": "~/.config/nvim/init.lua",
+  "vim.neovimUseConfigFile": true,
+  "editor.minimap.enabled": false,
+  "vs-kubernetes": {
+    "vs-kubernetes.knownKubeconfigs": [
+      "~/Downloads/mx-prod-cluster.yaml",
+      "~/.kube/mx-prod-cluster.yaml",
+      "~/.kube/ke-prod-cluster.yaml",
+      "~/.kube/rancher/ke-prod-cluster.yaml",
+      "~/.kube/ke-prod-cluster.yaml",
+      "~/.kube/config"
+    ],
+    "vs-kubernetes.kubeconfig": "~/.kube/config",
+    "vscode-kubernetes.helm-path-mac": "~/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path-mac": "~/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vs-kubernetes.crd-code-completion": "disabled",
+    "vs-kubernetes.minikube-show-information-expiration": "2025-04-15T19:07:50.952Z"
+  },
+  "terminal.integrated.fontSize": 24,
+  "terminal.integrated.lineHeight": 1.2,
+  "editor.fontSize": 24,
+  "editor.glyphMargin": 18,
+  "workbench.editor.openPositioning": "last",
+  "remote.autoForwardPortsSource": "hybrid",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  // "workbench.fontAliasing": "auto",
+  "explorer.autoReveal": false,
+  "workbench.editor.showTabs": "none",
+  "catppuccin.bracketMode": "monochromatic",
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+  "editor.wordWrap": "off",
+  "terminal.integrated.commandsToSkipShell": [ "language-julia.interrupt" ],
+  "julia.symbolCacheDownload": true,
+  "debug.console.fontSize": 14,
+  "workbench.startupEditor": "none",
+  "julia.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "\"JetBrainsMonoNL Nerd Font\"",
+  "notebook.output.minimalErrorRendering": true,
+  "editor.fontWeight": "normal",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "notebook.markup.fontSize": 18,
+  "catppuccin.italicComments": false,
+  "catppuccin.italicKeywords": false,
+  "jupyter.enableExtendedPythonKernelCompletions": true,
+  "jupyter.interactiveWindow.codeLens.enableGotoCell": false,
+  // "window.autoDetectColorScheme": true,
+  "editor.tokenColorCustomizations": {
+    "[Vesper]": {
+      "textMateRules": [
+        {
+          "scope": [ "string", ],
+          "settings": { "foreground": "#FF8080" }
+        },
+      ]
+    }
+  },
+  "python.analysis.aiCodeActions": {},
+  "redhat.telemetry.enabled": true,
+  "editor.lineNumbers": "relative",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "json": false,
+    "yamljson": false,
+  },
+  "catppuccin.colorOverrides": {},
+  "extensions.ignoreRecommendations": true,
+  "editor.fontFamily": "\"JetBrains Mono\"",
+  "vim.highlightedyank.enable": true,
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": "off",
+  "json.format.enable": false,
+  "editor.renderLineHighlight": "none",
+  "workbench.preferredLightColorTheme": "ob-theme",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.suggestLineHeight": 21,
+  "editor.suggestFontSize": 18,
+  "editor.suggest.preview": false,
+  "window.autoDetectColorScheme": true,
+  "telemetry.feedback.enabled": false,
+  "settingsSync.keybindingsPerPlatform": false,
+}
