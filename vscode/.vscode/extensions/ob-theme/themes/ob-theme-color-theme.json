@@ -399,7 +399,7 @@
 		{
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#0000FF"
+				"foreground": "#098658"
 			}
 		},
 		{
@@ -782,7 +782,8 @@
 		},
 		{
 			"scope": [
-				"variable.language.special.self.python"
+				"variable.language.special.self.python",
+				"variable.language.special.cls.python"
 			],
 			"settings": {
 				"foreground": "#267F99"
@@ -801,6 +802,16 @@
 			"settings":{
 				"foreground": "#4c9878",
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [
+				"keyword.other.special-method.dockerfile",
+				"constant.character.escaped.dockerfile",
+				"constant.character.format.placeholder.other.python"
+			],
+			"settings":{
+				"foreground": "#287b58",
 			}
 		}
 	]
