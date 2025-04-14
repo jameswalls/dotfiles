@@ -61,6 +61,15 @@
       "before": [ "<space>", "f"],
       "commands": ["workbench.action.openEditorAtIndex4"]
     },
+    // lsp
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.revealDeclaration"]
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
