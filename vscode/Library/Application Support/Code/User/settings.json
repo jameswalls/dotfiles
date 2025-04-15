@@ -167,7 +167,7 @@
   "json.format.enable": false,
   "editor.renderLineHighlight": "none",
   "workbench.preferredLightColorTheme": "ob-theme",
-  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredDarkColorTheme": "Vesper",
   "git.openRepositoryInParentFolders": "never",
   "editor.suggestLineHeight": 21,
   "editor.suggestFontSize": 18,
