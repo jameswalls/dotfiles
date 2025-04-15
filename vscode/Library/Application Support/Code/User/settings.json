@@ -175,4 +175,5 @@
   "window.autoDetectColorScheme": true,
   "telemetry.feedback.enabled": false,
   "settingsSync.keybindingsPerPlatform": false,
+  "workbench.editor.closeEmptyGroups": false,
 }
