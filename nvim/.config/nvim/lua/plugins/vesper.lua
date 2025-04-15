@@ -22,7 +22,6 @@ return {
 			overrides = {
 				Conditional = { fg=colors.borderDarker, bold=true },
 				CursorLineNr = { bg='none', bold=true },
-				NormalFloat = { bg='none' },
 				Statement = { fg=colors.borderDarker, bold=true },
 				TelescopeMatching = { fg=colors.yellowDark },
 			},
