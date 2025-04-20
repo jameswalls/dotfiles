@@ -23,7 +23,8 @@ return {
 				Conditional = { fg=colors.borderDarker, bold=true },
 				CursorLineNr = { bg='none', bold=true },
 				Statement = { fg=colors.borderDarker, bold=true },
-				TelescopeMatching = { fg=colors.yellowDark },
+				TelescopeMatching = { fg=colors.red },
+				TelescopeSelection = { bg=colors.fgSelection },
 			},
 		})
 		vim.cmd.colorscheme("vesper")
