@@ -1,3 +1,4 @@
 return {
-	"github/copilot.vim"
+	"github/copilot.vim",
+	fmt = { "markdown", "python", }
 }
