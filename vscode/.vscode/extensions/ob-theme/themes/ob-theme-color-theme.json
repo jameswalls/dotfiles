@@ -320,10 +320,6 @@
 				"string.comment.buffered.block.pug",
 				"string.quoted.pug",
 				"string.interpolated.pug",
-				"string.unquoted.plain.in.yaml",
-				"string.unquoted.plain.out.yaml",
-				"string.unquoted.block.yaml",
-				"string.quoted.single.yaml",
 				"string.quoted.double.xml",
 				"string.quoted.single.xml",
 				"string.unquoted.cdata.xml",
@@ -813,6 +809,26 @@
 			"settings":{
 				"foreground": "#287b58",
 			}
-		}
+		},
+		{
+			"scope": [
+				"entity.name.tag.yaml",
+			],
+			"settings":{
+				"foreground": "#287b58",
+			}
+		},
+		{
+			"scope": [
+				"string.unquoted.plain.in.yaml",
+				"string.unquoted.plain.out.yaml",
+				"string.unquoted.block.yaml",
+				"string.quoted.single.yaml",
+			],
+			"settings":{
+				"foreground": "#31302f",
+			}
+		},
+
 	]
 }
