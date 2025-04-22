@@ -801,7 +801,7 @@
 		{
 			"scope": "constant.language.python",
 			"settings":{
-				"foreground": "#4c9878",
+				"foreground": "#2c9db6",
 				"fontStyle": "bold"
 			}
 		},
