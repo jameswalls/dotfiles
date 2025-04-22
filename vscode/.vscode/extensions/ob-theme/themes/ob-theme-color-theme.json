@@ -63,7 +63,7 @@
 		"sideBarSectionHeader.border": "#faf7f4",
 		"sideBarSectionHeader.foreground": "#161616",
 		"sideBarTitle.foreground": "#161616",
-		"statusBar.background": "#985ae7",
+		"statusBar.background": "#2c9db6",
 		"statusBarItem.errorBackground": "#c72e0f",
 		"statusBarItem.remoteBackground": "#16825d",
 		"statusBarItem.remoteForeground": "#ffffff",
@@ -667,7 +667,8 @@
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#D52EFF"
+				// "foreground": "#D52EFF"
+				"foreground": "#267F99"
 			}
 		},
 		{
