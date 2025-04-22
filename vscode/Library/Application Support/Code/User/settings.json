@@ -108,7 +108,7 @@
   },
   "terminal.integrated.fontSize": 21,
   "terminal.integrated.lineHeight": 1.2,
-  "editor.fontSize": 18,
+  "editor.fontSize": 21,
   "editor.glyphMargin": 18,
   "workbench.editor.openPositioning": "last",
   "remote.autoForwardPortsSource": "hybrid",
@@ -165,7 +165,6 @@
   "editor.occurrencesHighlight": "off",
   "json.format.enable": false,
   "editor.renderLineHighlight": "none",
-  "workbench.preferredLightColorTheme": "ob-theme",
   "workbench.preferredDarkColorTheme": "Vesper",
   "git.openRepositoryInParentFolders": "never",
   "editor.suggestLineHeight": 21,
@@ -175,4 +174,5 @@
   "telemetry.feedback.enabled": false,
   "settingsSync.keybindingsPerPlatform": false,
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.preferredLightColorTheme": "ob-theme",
 }

@@ -422,10 +422,12 @@
 				"keyword.operator.instanceof",
 				"keyword.operator.logical.python",
 				"keyword.operator.assignment.python",
+				"keyword.operator.comparison.python",
 				"keyword.operator.wordlike"
 			],
 			"settings": {
-				"foreground": "#4C9878"
+				"foreground": "#4C9878",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -683,7 +685,8 @@
 		{
 			"scope": "keyword.control",
 			"settings": {
-				"foreground": "#4C9878"
+				"foreground": "#4C9878",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -695,7 +698,8 @@
 		{
 			"scope": "storage.type",
 			"settings": {
-				"foreground": "#4C9878"
+				"foreground": "#4C9878",
+				"fontStyle": "bold"
 			}
 		},
 		{
