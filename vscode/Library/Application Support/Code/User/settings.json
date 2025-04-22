@@ -81,6 +81,7 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  "editor.cursorBlinking": "solid",
   "vim.cursorStylePerMode.insert": "block",
   "vim.cursorStylePerMode.normal": "block",
   "vim.cursorStylePerMode.replace": "block",
@@ -106,9 +107,9 @@
     "vs-kubernetes.crd-code-completion": "disabled",
     "vs-kubernetes.minikube-show-information-expiration": "2025-04-15T19:07:50.952Z"
   },
-  "terminal.integrated.fontSize": 21,
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.2,
-  "editor.fontSize": 21,
+  "editor.fontSize": 18,
   "editor.glyphMargin": 18,
   "workbench.editor.openPositioning": "last",
   "remote.autoForwardPortsSource": "hybrid",
@@ -150,12 +151,13 @@
   "redhat.telemetry.enabled": true,
   "editor.lineNumbers": "relative",
   "github.copilot.enable": {
-    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
     "json": false,
     "yamljson": false,
+    "*": false,
+    "python": true
   },
   "catppuccin.colorOverrides": {},
   "extensions.ignoreRecommendations": true,
@@ -175,4 +177,10 @@
   "settingsSync.keybindingsPerPlatform": false,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.preferredLightColorTheme": "ob-theme",
+  "github.copilot.chat.followUps": "never",
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "chat.implicitContext.enabled": {
+    "panel": "never",
+    "editing-session": "never"
+  }
 }
