@@ -35,7 +35,7 @@ return {
 				["@keyword"] = { bold = true },
 				["@keyword.exception"] = { bold = true },
 				["@keyword.return"] = { bold = true },
-				["TelescopeMatching"] = { fg=color.yellow, bold = true, italic = false },
+				["TelescopeMatching"] = { fg=color.orange, bold = true, italic = false },
 			}
 		})
 		print(brighten_hex(color.gray9, 10))
