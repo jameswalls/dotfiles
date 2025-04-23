@@ -1,0 +1,98 @@
+{
+	"name": "lackluster",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#191919",
+		"editor.foreground": "#deeeed",
+		"editorLineNumber.foreground": "#444444",
+		"editorCursor.foreground": "#aaaaaa",
+		"editor.selectionBackground": "#2a2a2a",
+		"editor.lineHighlightBackground": "#080808",
+		"editorIndentGuide.background": "#2a2a2a",
+		"editorIndentGuide.activeBackground": "#555555",
+		"sideBar.background": "#080808",
+		"sideBar.foreground": "#aaaaaa",
+		"statusBar.background": "#080808",
+		"statusBar.foreground": "#cccccc",
+		"activityBar.background": "#000000",
+		"tab.activeBackground": "#191919",
+		"tab.inactiveBackground": "#080808",
+		"tab.activeForeground": "#deeeed",
+		"tab.inactiveForeground": "#7a7a7a",
+		"titleBar.activeBackground": "#080808",
+		"titleBar.activeForeground": "#cccccc"
+	},
+	"tokenColors": [
+		{
+			"scope": ["comment", "punctuation.definition.comment"],
+			"settings": {
+				"foreground": "#7a7a7a",
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.arguments.begin",
+				"punctuation.definition.arguments.end",
+				"punctuation.definition.parameters.begin",
+				"punctuation.definition.parameters.end"
+			],
+			"settings": {
+				"foreground": "#7a7a7a",
+			}
+		},
+		{
+			"scope": ["keyword", "storage.type", "storage.modifier"],
+			"settings": {
+				"foreground": "#7a7a7a",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": ["string", "constant.other.symbol", "constant.language.boolean", "constant.numeric"],
+			"settings": {
+				"foreground": "#7788AA"
+			}
+		},
+		{
+			"scope": ["variable", "identifier"],
+			"settings": {
+				"foreground": "#cccccc"
+			}
+		},
+		{
+			"scope": ["meta.function-call"],
+			"settings": {
+				"foreground": "#deeeed"
+			}
+		},
+		{
+			"scope": ["meta.item-access", "meta.indexed-name"],
+			"settings": {
+				"foreground": "#deeeed"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.type",
+				"support.class",
+				"entity.name.function",
+				"support.function"
+			],
+			"settings": {
+				"foreground": "#cccccc"
+			}
+		},
+		{
+			"scope": ["meta", "meta.embedded"],
+			"settings": {
+				"foreground": "#708090"
+			}
+		},
+		{
+			"scope": ["source.python"],
+			"settings": {
+				"foreground": "#cccccc"
+			}
+		}
+	]
+}
