@@ -162,7 +162,7 @@ config.color_scheme = "Vesper"
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = 'NeverPrompt'
 config.force_reverse_video_cursor = true
-config.bold_brightens_ansi_colors = true
+config.bold_brightens_ansi_colors = false
 config.window_background_opacity = 1
 config.keys = {
 	{
