@@ -182,5 +182,6 @@
   "chat.implicitContext.enabled": {
     "panel": "never",
     "editing-session": "never"
-  }
+  },
+  "editor.inlayHints.enabled": "off"
 }
