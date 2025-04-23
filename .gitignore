@@ -4,6 +4,7 @@ k9s/.config/k9s/clusters/
 
 nvim/.config/nvim/*/packer_compiled.lua
 nvim/.config/nvim/*.json
+nvim/.config/nvim/lua/plugins/ai-chat.lua
 
 tmux/.config/tmux/plugins/
 tmux/.config/tmux/layouts/
