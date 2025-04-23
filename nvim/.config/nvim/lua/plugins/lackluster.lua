@@ -38,7 +38,6 @@ return {
 				["TelescopeMatching"] = { fg=color.orange, bold = true, italic = false },
 			}
 		})
-		print(brighten_hex(color.gray9, 10))
 		vim.cmd.colorscheme("lackluster")
 	end
 }
