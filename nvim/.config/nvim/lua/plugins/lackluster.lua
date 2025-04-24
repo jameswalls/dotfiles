@@ -36,6 +36,9 @@ return {
 				["@keyword.exception"] = { bold = true },
 				["@keyword.return"] = { bold = true },
 				["TelescopeMatching"] = { fg=color.orange, bold = true, italic = false },
+				GitSignsAdd = { fg=color.green },
+				GitSignsChange = { fg=color.yellow },
+				GitSignsDelete = { fg=color.red }
 			}
 		})
 		vim.cmd.colorscheme("lackluster")
