@@ -109,6 +109,7 @@
   },
   "terminal.integrated.fontSize": 21,
   "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.copyOnSelection": true,
   "editor.fontSize": 21,
   "editor.glyphMargin": 18,
   "workbench.editor.openPositioning": "last",
@@ -176,7 +177,7 @@
   "telemetry.feedback.enabled": false,
   "settingsSync.keybindingsPerPlatform": false,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.preferredLightColorTheme": "lackluster",
+  "workbench.preferredLightColorTheme": "ob-theme",
   "github.copilot.chat.followUps": "never",
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "chat.implicitContext.enabled": {
