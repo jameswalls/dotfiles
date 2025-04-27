@@ -39,14 +39,6 @@ vim.o.termguicolors = true
 vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
 -- vim.api.nvim_set_hl(0, 'NormalFloat', { bg='none' })
 
-vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "Highlight when yanking (copying) text",
-  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
-  callback = function()
-    vim.highlight.on_yank({higroup="Visual"})
-  end,
-})
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -66,3 +58,5 @@ require("lazy").setup("plugins", {
 		colorscheme = { "default" }
 	}
 })
+
+require('autocmds').setup()
