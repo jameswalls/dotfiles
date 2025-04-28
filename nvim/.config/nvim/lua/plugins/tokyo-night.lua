@@ -31,6 +31,10 @@ return {
 			on_highlights = function(highlights, colors)
         highlights["Cursor"] = { reverse=true }
 				highlights.String = { fg=colors.red }
+        highlights["@keyword.import.python"] = { fg=colors.purple, bold=true }
+        highlights["@keyword.conditional"] = { fg=colors.purple, bold=true }
+        highlights["@keyword.exception"] = { fg=colors.purple, bold=true }
+        highlights["@keyword.repeat"] = { fg=colors.purple, bold=true }
 				highlights["@variable.builtin"] = { fg=colors.fg_float }
 				highlights["FloatBorder"] = { fg=colors.fg_float }
 				highlights["TelescopeBorder"] = { fg=colors.fg_float }
