@@ -61,7 +61,7 @@ return {
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags)
 		vim.keymap.set("n", "<leader>gs", builtin.grep_string)
 		vim.keymap.set("n", "<leader>dg", builtin.diagnostics)
-		vim.keymap.set("n", "<leader>cc", builtin.commands)
+		vim.keymap.set("n", "<leader>gc", builtin.commands)
 		vim.keymap.set("n", "<leader>bb", builtin.buffers)
 		vim.keymap.set("n", "<leader>ss", current_buffer_fuzzy_find)
 		vim.keymap.set("n", "<leader>fg", extensions.live_grep_args.live_grep_args)
