@@ -73,10 +73,16 @@ return {
 				["<C-Space>"] = cmp.mapping.complete(),
 				["<CR>"] = cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert}),
 			}),
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered()
+      },
 			formatting = {
-				fields = { "kind", "abbr", "menu" },
+				fields = { "kind", "abbr", "menu"},
 				format = function(entry, vim_item)
 					vim_item.kind = cmp_kinds[vim_item.kind] or " "
+          print(vim.o.columns)
+          vim_item.abbr = string.sub(vim_item.abbr, 1, 0.4 * vim.o.columns)
 					vim_item.menu = cmp_menus[entry.source.name]
 					return vim_item
 				end,
