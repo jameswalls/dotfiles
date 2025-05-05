@@ -2,17 +2,21 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		-- local theme = require("lualine.utils.loader").load_theme("auto")
-		-- theme.normal.c = { bg="NONE" }
-		-- theme.insert.c = { bg="NONE" }
-		-- theme.replace.c = { bg="NONE" }
-		-- theme.visual.c = { bg="NONE" }
-		-- theme.command.c = { bg="NONE" }
+		local theme = require("lualine.utils.loader").load_theme("auto")
+    theme.normal.a = { bg="#ff87ff", fg="#000000", gui="bold" }
+    theme.normal.b = { fg="#ff87ff" }
+		theme.normal.c = { fg="#c6c6c6"}
+		theme.insert.c = { bg="NONE" }
+		theme.replace.c = { bg="NONE" }
+		theme.visual.c = { bg="NONE" }
+    theme.command.a = { bg="#5fafff", fg="#000000", gui="bold" }
+		theme.command.b = { fg="#5fafff" }
+		theme.command.c = { bg="NONE" }
 
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
-				-- theme = theme,
+				theme = theme,
 				component_separators = { left = "", right = ""},
 				section_separators = { left = "", right = ""},
 				disabled_filetypes = {
