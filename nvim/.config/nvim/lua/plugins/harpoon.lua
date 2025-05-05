@@ -13,8 +13,19 @@ return {
 			}
 		})
 
+    local window_opts = {
+      title = " Harpoon ",
+      title_pos = "center",
+      border = "rounded"
+    }
+
 		vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
-		vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+		vim.keymap.set("n", "<leader>h", function()
+      harpoon.ui:toggle_quick_menu(
+        harpoon:list(),
+        window_opts
+      )
+    end)
 		vim.keymap.set("n", "<space>a", function() harpoon:list():select(1) end)
 		vim.keymap.set("n", "<space>s", function() harpoon:list():select(2) end)
 		vim.keymap.set("n", "<space>d", function() harpoon:list():select(3) end)
