@@ -144,6 +144,13 @@ config.font_rules = {
 		font = wezterm.font({
 			family = font_family,
 			weight = bold_weight,
+      harfbuzz_features = {
+        "calt=0", -- contextual alternates
+        "clig=0", -- contextual ligatures
+        "liga=0", -- standard ligatures
+        "rlig=0", -- required ligatures
+        "kern=0", -- kerning (can sometimes affect ligatures)
+      },
 		})
 	}
 }
