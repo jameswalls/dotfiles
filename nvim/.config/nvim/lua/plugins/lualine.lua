@@ -3,13 +3,17 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		local theme = require("lualine.utils.loader").load_theme("auto")
-    theme.normal.a = { bg="#ff87ff", fg="#000000", gui="bold" }
+    theme.normal.a = { fg="#000000", bg="#ff87ff", gui="bold" }
     theme.normal.b = { fg="#ff87ff" }
-		theme.normal.c = { fg="#c6c6c6"}
+		theme.normal.c = { bg="NONE" }
+		theme.insert.a = { fg="#000000", bg="#ffd787", gui="bold" }
+		theme.insert.b = { fg="#ffd787" }
 		theme.insert.c = { bg="NONE" }
 		theme.replace.c = { bg="NONE" }
+		theme.visual.a = { fg="#000000", bg="#5fafaf", gui="bold" }
+		theme.visual.b = { fg="#5fafaf" }
 		theme.visual.c = { bg="NONE" }
-    theme.command.a = { bg="#5fafff", fg="#000000", gui="bold" }
+    theme.command.a = { fg="#000000", bg="#5fafff", gui="bold" }
 		theme.command.b = { fg="#5fafff" }
 		theme.command.c = { bg="NONE" }
 
