@@ -31,6 +31,8 @@ return {
 			},
 			tweak_highlight = {
 				OilDir = { fg = color.gray7 },
+        NormalFloat = { bg = 'none' },
+        VertSplit = { bg = 'none' },
 				["@property.json"] = { fg = color.gray7 },
 				["@keyword"] = { bold = true },
 				["@keyword.exception"] = { bold = true },

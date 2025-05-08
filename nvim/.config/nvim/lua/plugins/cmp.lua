@@ -74,8 +74,8 @@ return {
 				["<CR>"] = cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert}),
 			}),
       window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered()
+        -- completion = cmp.config.window.bordered(),
+        -- documentation = cmp.config.window.bordered()
       },
 			formatting = {
 				fields = { "kind", "abbr", "menu"},
