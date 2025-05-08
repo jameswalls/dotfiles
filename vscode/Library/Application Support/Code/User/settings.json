@@ -127,7 +127,7 @@
   "debug.console.fontSize": 14,
   "workbench.startupEditor": "none",
   "julia.enableTelemetry": false,
-  "terminal.integrated.fontFamily": "\"JetBrainsMonoNL Nerd Font\"",
+  "terminal.integrated.fontFamily": "\"JetBrains Mono\"",
   "notebook.output.minimalErrorRendering": true,
   "editor.fontWeight": "normal",
   "terminal.integrated.drawBoldTextInBrightColors": false,
@@ -171,7 +171,7 @@
   "workbench.preferredDarkColorTheme": "lackluster",
   "git.openRepositoryInParentFolders": "never",
   "editor.suggestLineHeight": 21,
-  "editor.suggestFontSize": 21,
+  "editor.suggestFontSize": 18,
   "editor.suggest.preview": true,
   "window.autoDetectColorScheme": true,
   "telemetry.feedback.enabled": false,
@@ -184,5 +184,10 @@
     "panel": "never",
     "editing-session": "never"
   },
-  "editor.inlayHints.enabled": "off"
+  "editor.inlayHints.enabled": "off",
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.statusBarItem.enabled": false,
+  "github.copilot.advanced": {
+    "authProvider": "github-enterprise"
+  }
 }
