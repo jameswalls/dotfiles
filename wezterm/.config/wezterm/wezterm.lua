@@ -75,7 +75,7 @@ local function get_font_weights(appearance, sync_os)
 	local normal_weight, bold_weight
 	if sync_os or false then
 		if appearance:find 'Dark' then
-			normal_weight = "Regular"
+			normal_weight = "Medium"
 			bold_weight = "Bold"
 		else
 			normal_weight = "Regular"
