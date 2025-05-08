@@ -33,6 +33,7 @@ vim.opt.wrap = false
 vim.opt.hlsearch = false
 vim.opt.cursorlineopt = "number"
 vim.opt.cursorline = true
+vim.opt.confirm = true
 vim.o.termguicolors = true
 
 vim.cmd.colorscheme("lunaperche")
