@@ -21,7 +21,6 @@ return {
 				}
 			}
 		},
-		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -52,22 +51,6 @@ return {
 		capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 		local servers = {
-			lua_ls = {
-				enabled = true,
-				settings = {
-					Lua = {
-						runtime = { version = "LuaJIT" },
-						workspace = {
-							checkThirdParty = false,
-							library = { vim.env.VIMRUNTIME },
-						},
-						completion = {
-							callSnippet = "Replace",
-						},
-						diagnostics = { disable = { "missing-fields" } },
-					},
-				},
-			},
 			pylsp = {
 				enabled = false,
 				filetypes = { "python" },
