@@ -22,9 +22,11 @@ return {
 			overrides = {
 				Conditional = { fg=colors.borderDarker, bold=true },
 				CursorLineNr = { bg='none', bold=true },
+        NormalFloat = { bg = 'none' },
 				Statement = { fg=colors.borderDarker, bold=true },
 				TelescopeMatching = { fg=colors.red },
 				TelescopeSelection = { bg=colors.fgSelection },
+        VertSplit = { bg = 'none' },
 			},
 		})
 		vim.cmd.colorscheme("vesper")
