@@ -21,7 +21,6 @@ return {
 			defaults = {
 				wrap_results = true,
 				path_display = { "filename_first" },
-        border = false
 			},
 			pickers = {
 				find_files = {
