@@ -41,24 +41,5 @@ vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg='none' })
 vim.api.nvim_set_hl(0, "Vertsplit", { fg="#c6c6c6"})
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-
-require("lazy").setup("plugins", {
-	install = {
-		missing = true,
-		colorscheme = { "default" }
-	}
-})
-
+require("config.lazy")
 require('autocmds').setup()
