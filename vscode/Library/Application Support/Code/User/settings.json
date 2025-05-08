@@ -107,10 +107,10 @@
     "vs-kubernetes.crd-code-completion": "disabled",
     "vs-kubernetes.minikube-show-information-expiration": "2025-04-15T19:07:50.952Z"
   },
-  "terminal.integrated.fontSize": 21,
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.copyOnSelection": true,
-  "editor.fontSize": 21,
+  "editor.fontSize": 18,
   "editor.glyphMargin": 18,
   "workbench.editor.openPositioning": "last",
   "remote.autoForwardPortsSource": "hybrid",
