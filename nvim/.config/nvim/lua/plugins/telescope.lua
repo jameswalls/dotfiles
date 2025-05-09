@@ -20,7 +20,8 @@ return {
 		require("telescope").setup({
 			defaults = {
 				wrap_results = true,
-				path_display = { "filename_first" },
+				path_display = { filename_first = { reverse_directories = true }},
+				-- path_display = { "absolute" },
 			},
 			pickers = {
 				find_files = {
