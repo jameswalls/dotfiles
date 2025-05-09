@@ -3,7 +3,6 @@ return {
 	dependencies = {
 		{ "williamboman/mason.nvim", config = true },
 		"williamboman/mason-lspconfig.nvim",
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		{
 			"j-hui/fidget.nvim",
 			enabled = true,
@@ -75,7 +74,11 @@ return {
 			},
 		}
 
-		require("mason").setup()
+    require("mason").setup({
+      registries = {
+        "github:mason-org/mason-registry",
+      }
+    })
 
 		local ensure_installed = vim.tbl_keys(servers or {})
 
