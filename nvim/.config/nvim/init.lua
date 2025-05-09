@@ -36,11 +36,11 @@ vim.opt.cursorline = true
 vim.opt.confirm = true
 vim.o.termguicolors = true
 
-vim.cmd.colorscheme("lunaperche")
-vim.api.nvim_set_hl(0, 'Normal', { bg='none', fg="#c6c6c6" })
+-- vim.cmd.colorscheme("lunaperche")
+-- vim.api.nvim_set_hl(0, 'Normal', { bg='none', fg="#c6c6c6" })
 vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
-vim.api.nvim_set_hl(0, 'NormalFloat', { bg='none' })
-vim.api.nvim_set_hl(0, "Vertsplit", { fg="#c6c6c6"})
+-- vim.api.nvim_set_hl(0, 'NormalFloat', { bg='none' })
+-- vim.api.nvim_set_hl(0, "Vertsplit", { fg="#c6c6c6"})
 
 require("config.lazy")
 require('autocmds').setup()

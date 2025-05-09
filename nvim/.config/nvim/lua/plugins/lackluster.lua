@@ -13,34 +13,27 @@ end
 
 return {
 	"slugbyte/lackluster.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function ()
 
 		local color = require("lackluster.color")
 		require("lackluster").setup({
-			tweak_syntax = {
-				-- comment = color.gray5,
-				keyword = color.gray6,
-				keyword_return = color.gray6,
-				keyword_exception = color.gray6,
-			},
-			tweak_background = {
-				normal = "none",
-				telescope = "none",
-			},
+      disable_plugin = {},
 			tweak_highlight = {
-				OilDir = { fg = color.gray7 },
-        NormalFloat = { bg = 'none' },
-        VertSplit = { bg = 'none' },
+				OilDir = { fg = color.blue },
+        Normal = { bg = color.gray2, fg = color.luster },
+        NormalFloat = { bg = color.gray2},
+        VertSplit = { bg = color.gray2, fg = color.luster},
 				["@property.json"] = { fg = color.gray7 },
 				["@keyword"] = { bold = true },
 				["@keyword.exception"] = { bold = true },
 				["@keyword.return"] = { bold = true },
 				["TelescopeMatching"] = { fg=color.orange, bold = true, italic = false },
-				GitSignsAdd = { fg=color.green },
-				GitSignsChange = { fg=color.yellow },
-				GitSignsDelete = { fg=color.red }
+        SignColumn = { bg = color.gray2 },
+				GitSignsAdd = { bg=color.gray2, fg=color.green },
+				GitSignsChange = { bg=color.gray2, fg=color.yellow },
+				GitSignsDelete = { bg=color.gray2, fg=color.red }
 			}
 		})
 		vim.cmd.colorscheme("lackluster")

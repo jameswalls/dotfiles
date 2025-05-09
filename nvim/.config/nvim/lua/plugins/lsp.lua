@@ -73,17 +73,6 @@ return {
 			rust_analyzer = {
 				enabled = true,
 			},
-			pyright = {
-				enabled = true,
-				filetypes = { "python" },
-				python = {
-					analysis = {
-						autoSearchPaths = true,
-						diagnosticMode = "openFilesOnly",
-						useLibraryCodeForTypes = true
-					}
-				}
-			}
 		}
 
 		require("mason").setup()
