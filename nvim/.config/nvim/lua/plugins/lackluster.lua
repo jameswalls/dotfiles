@@ -20,21 +20,24 @@ return {
 		local color = require("lackluster.color")
 		require("lackluster").setup({
       disable_plugin = {},
+      tweak_background = {
+        normal = "none"
+      },
 			tweak_highlight = {
 				OilDir = { fg = color.blue },
-        Normal = { bg = color.gray2, fg = color.luster },
-        NormalFloat = { bg = color.gray2},
+        -- Normal = { bg = color.gray2, fg = color.luster },
+        -- NormalFloat = { bg = color.gray2},
         VertSplit = { bg = color.gray2, fg = color.luster},
 				["@property.json"] = { fg = color.gray7 },
 				["@keyword"] = { bold = true },
 				["@keyword.exception"] = { bold = true },
 				["@keyword.return"] = { bold = true },
 				TelescopeMatching = { fg=color.orange, bold = true, italic = false },
-        TelescopeBorder = { bg = color.gray2 },
-        TelescopeNormal = { bg = color.gray2 },
-        TelescopeSelection = { bg = color.gray3 },
+        -- TelescopeBorder = { bg = color.gray2 },
+        -- TelescopeNormal = { bg = color.gray2 },
+        -- TelescopeSelection = { bg = color.gray3 },
         TelescopeResultsNormal = { bg=color.none },
-        SignColumn = { bg = color.gray2 },
+        -- SignColumn = { bg = color.gray2 },
 				GitSignsAdd = { bg=color.gray2, fg=color.green },
 				GitSignsChange = { bg=color.gray2, fg=color.yellow },
 				GitSignsDelete = { bg=color.gray2, fg=color.red },
