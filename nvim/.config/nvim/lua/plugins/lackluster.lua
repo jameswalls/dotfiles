@@ -37,7 +37,9 @@ return {
         SignColumn = { bg = color.gray2 },
 				GitSignsAdd = { bg=color.gray2, fg=color.green },
 				GitSignsChange = { bg=color.gray2, fg=color.yellow },
-				GitSignsDelete = { bg=color.gray2, fg=color.red }
+				GitSignsDelete = { bg=color.gray2, fg=color.red },
+        DiagnosticWarn = { fg=color.yellow },
+        DiagnosticError = { fg=color.red },
 			}
 		})
 		vim.cmd.colorscheme("lackluster")
