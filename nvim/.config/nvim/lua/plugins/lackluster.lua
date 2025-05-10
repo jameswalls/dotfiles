@@ -22,7 +22,8 @@ return {
       disable_plugin = {},
       tweak_background = {
         normal = "none",
-        popup = "none"
+        popup = "none",
+        telescope = "none"
       },
 			tweak_highlight = {
 				OilDir = { fg = color.blue },
