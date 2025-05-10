@@ -21,12 +21,13 @@ return {
 		require("lackluster").setup({
       disable_plugin = {},
       tweak_background = {
-        normal = "none"
+        normal = "none",
+        popup = "none"
       },
 			tweak_highlight = {
 				OilDir = { fg = color.blue },
         -- Normal = { bg = color.gray2, fg = color.luster },
-        -- NormalFloat = { bg = color.gray2},
+        -- NormalFloat = { bg = color.none },
         VertSplit = { bg = color.gray2, fg = color.luster},
 				["@property.json"] = { fg = color.gray7 },
 				["@keyword"] = { bold = true },
