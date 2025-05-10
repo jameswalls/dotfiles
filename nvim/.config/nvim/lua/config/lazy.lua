@@ -23,5 +23,9 @@ require("lazy").setup({
   },
   install = { colorscheme = { "lunaperche" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled=true, notif=false },
+  dev = {
+    path = "~/projects/nvim/",
+    fallback = false
+  }
 })
