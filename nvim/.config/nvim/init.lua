@@ -19,6 +19,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.showmode = false
 vim.opt.breakindent = true
 vim.opt.autoindent = false
+vim.opt.autoread = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes:1"
