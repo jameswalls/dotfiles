@@ -187,7 +187,5 @@
   "editor.inlayHints.enabled": "off",
   "git.blame.editorDecoration.enabled": true,
   "git.blame.statusBarItem.enabled": false,
-  "github.copilot.advanced": {
-    "authProvider": "github-enterprise"
-  }
+  "github.copilot.advanced": {}
 }
