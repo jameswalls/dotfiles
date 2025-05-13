@@ -82,7 +82,7 @@ return {
 				format = function(entry, vim_item)
 					vim_item.kind = cmp_kinds[vim_item.kind] or " "
           print(vim.o.columns)
-          vim_item.abbr = string.sub(vim_item.abbr, 1, 0.4 * vim.o.columns)
+          vim_item.abbr = string.sub(vim_item.abbr, 1, 0.3 * vim.o.columns)
 					vim_item.menu = cmp_menus[entry.source.name]
 					return vim_item
 				end,
