@@ -51,15 +51,18 @@ return {
 
 		local servers = {
 			pylsp = {
-				enabled = false,
 				filetypes = { "python" },
 				settings = {
 					pylsp = {
+            configuratinSources = { "pycodestyle", "pyflakes" },
 						plugins = {
-							pycodestyle = {
-								enabled = true,
-								maxLineLength = 120,
-							},
+              pyflakes = {
+                enabled = false,
+              },
+              pycodestyle = {
+                enabled = true,
+                maxLineLength = 120,
+              },
 							jedi_completion = {
 								enabled = true,
 								include_function_objects = false,
