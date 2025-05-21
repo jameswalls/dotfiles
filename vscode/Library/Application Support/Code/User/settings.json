@@ -168,7 +168,7 @@
   "editor.occurrencesHighlight": "off",
   "json.format.enable": false,
   "editor.renderLineHighlight": "none",
-  "workbench.preferredDarkColorTheme": "lackluster",
+  "workbench.preferredDarkColorTheme": "Vesper",
   "git.openRepositoryInParentFolders": "never",
   "editor.suggestLineHeight": 21,
   "editor.suggestFontSize": 18,
