@@ -17,6 +17,8 @@ return {
           mini = true,
         },
       })
+
       vim.cmd.colorscheme("cyberdream")
+      vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
     end
 }
