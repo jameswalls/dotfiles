@@ -2,20 +2,20 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		local theme = require("lualine.utils.loader").load_theme("auto")
-    theme.normal.a = { fg="#000000", bg="#ff87ff", gui="bold" }
-    theme.normal.b = { fg="#ff87ff" }
-		theme.normal.c = { bg="NONE" }
-		theme.insert.a = { fg="#000000", bg="#ffd787", gui="bold" }
-		theme.insert.b = { fg="#ffd787" }
-		theme.insert.c = { bg="NONE" }
-		theme.replace.c = { bg="NONE" }
-		theme.visual.a = { fg="#000000", bg="#5fafaf", gui="bold" }
-		theme.visual.b = { fg="#5fafaf" }
-		theme.visual.c = { bg="NONE" }
-    theme.command.a = { fg="#000000", bg="#5fafff", gui="bold" }
-		theme.command.b = { fg="#5fafff" }
-		theme.command.c = { bg="NONE" }
+		-- local theme = require("lualine.utils.loader").load_theme("auto")
+		--   theme.normal.a = { fg="#000000", bg="#ff87ff", gui="bold" }
+		--   theme.normal.b = { fg="#ff87ff" }
+		-- theme.normal.c = { bg="NONE" }
+		-- theme.insert.a = { fg="#000000", bg="#ffd787", gui="bold" }
+		-- theme.insert.b = { fg="#ffd787" }
+		-- theme.insert.c = { bg="NONE" }
+		-- theme.replace.c = { bg="NONE" }
+		-- theme.visual.a = { fg="#000000", bg="#5fafaf", gui="bold" }
+		-- theme.visual.b = { fg="#5fafaf" }
+		-- theme.visual.c = { bg="NONE" }
+		--   theme.command.a = { fg="#000000", bg="#5fafff", gui="bold" }
+		-- theme.command.b = { fg="#5fafff" }
+		-- theme.command.c = { bg="NONE" }
 
 		require("lualine").setup({
 			options = {
