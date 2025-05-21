@@ -1,7 +1,7 @@
 return {
 	"rose-pine/neovim",
 	name = "rose-pine",
-  lazy = false,
+  lazy = true,
   priority = 1000,
 	config = function()
     require("rose-pine").setup({
@@ -66,7 +66,7 @@ return {
           -- Comment = { fg = "foam" },
           -- StatusLine = { fg = "love", bg = "love", blend = 15 },
           -- VertSplit = { fg = "muted", bg = "muted" },
-          -- Visual = { fg = "base", bg = "text", inherit = false },
+          Visual = { bg="muted", fg="text", inherit=false},
           -- TelescopeSelection = { fg="gold", bg="highlight low" }
           TelescopeMatching = { fg="gold", bold=true },
           TelescopeSelection = { fg="text", bg="overlay"}
