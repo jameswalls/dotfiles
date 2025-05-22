@@ -16,9 +16,16 @@ return {
           notify = true,
           mini = true,
         },
+        highlights = {
+          TelescopeBorder = { fg = "#ffffff" },
+          FloatBorder = { fg = "#ffffff" },
+          Cursor = { reverse=true },
+          CursorLineNr = { fg="#ffffff", bold=true },
+          Visual = { fg = "#16181a", bg = "#ffffff" },
+          ["@keyword.type"] = { fg="#ffbd5e", italic=false },
+        },
       })
 
       vim.cmd.colorscheme("cyberdream")
-      vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
     end
 }
