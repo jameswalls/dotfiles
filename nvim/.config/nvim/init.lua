@@ -19,7 +19,6 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.showmode = false
 vim.opt.breakindent = true
 vim.opt.autoindent = false
-vim.opt.autoread = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = "yes:1"
@@ -36,7 +35,9 @@ vim.opt.cursorlineopt = "number"
 vim.opt.cursorline = true
 vim.opt.confirm = true
 vim.o.termguicolors = true
+vim.o.autoread = true
 
+-- double
 -- vim.cmd.colorscheme("lunaperche")
 -- vim.api.nvim_set_hl(0, 'Normal', { bg='none', fg="#c6c6c6" })
 -- vim.api.nvim_set_hl(0, 'Cursor', { reverse=true })
