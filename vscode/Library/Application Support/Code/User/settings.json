@@ -119,7 +119,6 @@
   "explorer.autoReveal": false,
   "workbench.editor.showTabs": "none",
   "catppuccin.bracketMode": "monochromatic",
-  "editor.bracketPairColorization.enabled": false,
   "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
   "editor.wordWrap": "off",
   "terminal.integrated.commandsToSkipShell": [ "language-julia.interrupt" ],
@@ -137,7 +136,6 @@
   "catppuccin.italicKeywords": false,
   "jupyter.enableExtendedPythonKernelCompletions": true,
   "jupyter.interactiveWindow.codeLens.enableGotoCell": false,
-  // "window.autoDetectColorScheme": true,
   "editor.tokenColorCustomizations": {
     "[Vesper]": {
       "textMateRules": [
@@ -168,16 +166,17 @@
   "editor.occurrencesHighlight": "off",
   "json.format.enable": false,
   "editor.renderLineHighlight": "none",
-  "workbench.preferredDarkColorTheme": "Vesper",
   "git.openRepositoryInParentFolders": "never",
   "editor.suggestLineHeight": 21,
   "editor.suggestFontSize": 18,
   "editor.suggest.preview": true,
-  "window.autoDetectColorScheme": true,
   "telemetry.feedback.enabled": false,
   "settingsSync.keybindingsPerPlatform": false,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.preferredLightColorTheme": "ob-theme",
+  // "workbench.preferredDarkColorTheme": "Vesper",
+  // "workbench.preferredLightColorTheme": "ob-theme",
+  "editor.bracketPairColorization.enabled": true,
+  "window.autoDetectColorScheme": false,
   "github.copilot.chat.followUps": "never",
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "chat.implicitContext.enabled": {
@@ -185,7 +184,7 @@
     "editing-session": "never"
   },
   "editor.inlayHints.enabled": "off",
-  "git.blame.editorDecoration.enabled": true,
-  "git.blame.statusBarItem.enabled": false,
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": true,
   "github.copilot.advanced": {}
 }
