@@ -87,7 +87,11 @@ return {
 
 		require("mason-lspconfig").setup({
       ensure_installed = ensure_installed,
-      automatic_enable = true
+      automatic_enable = true,
 		})
+
+    for server, settings in pairs(servers) do
+      vim.lsp.config(server, settings)
+    end
 	end
 }
