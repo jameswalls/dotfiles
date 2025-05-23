@@ -1,4 +1,4 @@
 return {
 	"github/copilot.vim",
-	ft = { "python" }
+	ft = { "python", "sh" }
 }
