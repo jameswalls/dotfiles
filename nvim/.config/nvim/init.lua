@@ -16,6 +16,7 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
+vim.opt.autoread = true
 vim.opt.showmode = false
 vim.opt.breakindent = true
 vim.opt.autoindent = false
@@ -35,7 +36,6 @@ vim.opt.cursorlineopt = "number"
 vim.opt.cursorline = true
 vim.opt.confirm = true
 vim.o.termguicolors = true
-vim.o.autoread = true
 
 require("config.lazy")
 require('autocmds').setup()

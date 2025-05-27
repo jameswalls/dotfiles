@@ -51,6 +51,7 @@ return {
 
 		local servers = {
 			pylsp = {
+        enabled = false,
 				filetypes = { "python" },
 				settings = {
 					pylsp = {
@@ -91,7 +92,9 @@ return {
 		})
 
     for server, settings in pairs(servers) do
-      vim.lsp.config(server, settings)
+      if settings["enabled"] then
+        vim.lsp.config(server, settings)
+      end
     end
 	end
 }
