@@ -1,10 +1,11 @@
 return {
 	"catppuccin/nvim",
 	name = "catppuccin",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
+      compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
 			flavour = "mocha", -- latte, frappe, macchiato, mocha
 			background = { -- :h background
 				light = "latte",
@@ -41,7 +42,6 @@ return {
 				return {
 					["@module"] = { style = {} },
 					LineNr = { fg=colors.surface2 },
-					NormalFloat = { bg=colors.mantle },
 					TelescopeSelection = { bg = colors.surface1 },
 					DiagnosticVirtualTextError = { style = {} },
 					DiagnosticVirtualTextHint = { style = {} },
