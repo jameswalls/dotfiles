@@ -47,8 +47,8 @@ return {
 					DiagnosticVirtualTextOk = { style = {} },
 					DiagnosticVirtualTextWarn = { style = {} },
 					LineNr = { fg=colors.surface2 },
-					TelescopeSelection = { fg = colors.text, bg = colors.surface0 },
-          TelescopeMatching = { fg = colors.peach, style = { "bold" }},
+					TelescopeSelection = { fg = colors.text, bg = colors.surface2, style = {} },
+          TelescopeMatching = { fg = colors.peach, style = {}},
           Visual = { style = {}},
 				}
 			end,
