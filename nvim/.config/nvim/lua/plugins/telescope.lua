@@ -24,6 +24,10 @@ return {
 				-- path_display = { "absolute" },
 			},
 			pickers = {
+				commands = {
+					theme = "dropdown",
+					previewer = false
+				},
 				find_files = {
 					theme = "dropdown",
 					previewer = false
