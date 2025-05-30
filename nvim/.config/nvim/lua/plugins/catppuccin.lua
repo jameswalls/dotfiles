@@ -41,13 +41,15 @@ return {
 			custom_highlights = function(colors)
 				return {
 					["@module"] = { style = {} },
-					LineNr = { fg=colors.surface2 },
-					TelescopeSelection = { bg = colors.surface1 },
 					DiagnosticVirtualTextError = { style = {} },
 					DiagnosticVirtualTextHint = { style = {} },
 					DiagnosticVirtualTextInfo = { style = {} },
 					DiagnosticVirtualTextOk = { style = {} },
 					DiagnosticVirtualTextWarn = { style = {} },
+					LineNr = { fg=colors.surface2 },
+					TelescopeSelection = { fg = colors.text, bg = colors.surface0 },
+          TelescopeMatching = { fg = colors.peach, style = { "bold" }},
+          Visual = { style = {}},
 				}
 			end,
 			default_integrations = true,
