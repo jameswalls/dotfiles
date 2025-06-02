@@ -9,7 +9,7 @@ return {
         on_highlight = function(h, p)
           h["Visual"] = { bg=p.grey3 }
           h["FloatBorder"] = { fg=p.grey5 }
-          h["TelescopeSelection"] = { bg=p.grey3 }
+          h["TelescopeSelection"] = { bg=p.grey0 }
           h["TelescopePromptNormal"] = {}
           h["TelescopePromptPrefix"] = { fg=p.yellow.base }
           h["TelescopePromptBorder"] = { fg=p.grey5 }
