@@ -33,6 +33,7 @@ vim.opt.guicursor = "a:block-Cursor"
 vim.opt.wrap = false
 vim.opt.hlsearch = false
 vim.opt.cursorlineopt = "number"
+vim.diagnostic.config({ virtual_text = true })
 vim.opt.cursorline = true
 vim.opt.confirm = true
 vim.o.termguicolors = true

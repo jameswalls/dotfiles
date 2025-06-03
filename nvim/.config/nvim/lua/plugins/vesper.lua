@@ -1,6 +1,6 @@
 return {
 	"datsfilipe/vesper.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function ()
 		local colors = require("vesper.colors")
@@ -20,6 +20,9 @@ return {
 				redDark = colors.green
 			},
 			overrides = {
+        Cursor = { reverse=true },
+        DiagnosticUnderlineError = {},
+        DiagnosticVirtualTextError = { fg=colors.hint },
 				Conditional = { fg=colors.borderDarker, bold=true },
 				CursorLineNr = { bg='none', bold=true },
         NormalFloat = { bg = 'none' },
