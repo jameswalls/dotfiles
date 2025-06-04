@@ -81,7 +81,7 @@ return {
 			},
 			rust_analyzer = {
 				enabled = true,
-				filetypes = { "rs" },
+				filetypes = { "rust" },
 			},
 		}
 
