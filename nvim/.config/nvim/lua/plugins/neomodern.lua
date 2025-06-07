@@ -33,7 +33,9 @@ return {
         variables = "none",
       },
       highlights = {
-        FloatBorder = {fg="#555568", bg="none"}
+        FloatBorder = {fg="#555568", bg="none"},
+        TelescopeMatching = {fg="#e67e80"},
+        TelescopeSelection = {bg="#2a2a31"},
       }
     })
     require("neomodern").load()
