@@ -33,9 +33,10 @@ return {
         variables = "none",
       },
       highlights = {
-        FloatBorder = {fg="#555568", bg="none"},
-        TelescopeMatching = {fg="#e67e80"},
-        TelescopeSelection = {bg="#2a2a31"},
+        FloatBorder = { fg="#555568", bg="none" },
+        TelescopeMatching = { fg="#e67e80" },
+        TelescopeSelection = { bg="#2a2a31" },
+        ["@lsp.type.macro"] = { fg="#cfa18c", fmt="none" },
       }
     })
     require("neomodern").load()
