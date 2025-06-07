@@ -37,6 +37,7 @@ return {
 				map("<leader>ws", telescope.lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
 				map("<leader>td", telescope.lsp_type_definitions, "[T]ype [D]efinitions")
 				map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
+				map("<leader>ga", vim.lsp.buf.code_action, "[G]et code [a]ctions")
 				map("K", function() vim.lsp.buf.hover(window_opts) end , "Hover Documentation")
 				map("H", function() vim.lsp.buf.signature_help(window_opts) end, "Signature [H]elp")
 				map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
