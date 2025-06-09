@@ -18,6 +18,13 @@ local function setup_autocmds()
 		end,
 	})
 
+  vim.api.nvim_create_autocmd("FileType", {
+    pattern = "qf",
+    callback = function()
+      vim.cmd("resize 5")
+    end,
+  })
+
 end
 
 return {
