@@ -82,7 +82,7 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "Regular"
+		normal_weight = "Medium"
 		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
@@ -129,7 +129,7 @@ local config = wezterm.config_builder()
 
 config.hide_tab_bar_if_only_one_tab = true
 
-local sync_os = true
+local sync_os = false
 local font_family = "JetBrains Mono"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
