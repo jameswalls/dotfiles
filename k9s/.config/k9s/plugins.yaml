@@ -1,0 +1,11 @@
+plugins:
+  full-logs:
+    shortCut: Shift-L
+    description: Nvim logs
+    scopes:
+      - pods
+    command: sh
+    background: false
+    args:
+      - -c
+      - "kubectl logs $NAME -n $NAMESPACE --context=$CLUSTER --tail=-1 > /tmp/$CLUSTER-$NAMESPACE-$NAME.log && nvim /tmp/$CLUSTER-$NAMESPACE-$NAME.log"
