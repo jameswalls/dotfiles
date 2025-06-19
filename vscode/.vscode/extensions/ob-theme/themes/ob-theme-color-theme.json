@@ -239,6 +239,18 @@
 		},
 		{
 			"scope": [
+				"punctuation.definition",
+				"punctuation.definition.bracket",
+				"punctuation.definition.parameters",
+				"punctuation.definition.block",
+				"meta.brace",
+			],
+			"settings": {
+				"foreground": "#287b58"
+			}
+		},
+		{
+			"scope": [
 				"punctuation.definition.quote.begin.markdown",
 				"punctuation.definition.list.begin.markdown"
 			],
