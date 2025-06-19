@@ -30,15 +30,27 @@ return {
 				end,
 			},
 			keymaps = {
-				["<C-p>"] = function() oil.open_preview({ horizontal=true }) end,
+				["<C-p>"] = function()
+					oil.open_preview({ horizontal = true })
+				end,
 				["g."] = "actions.toggle_hidden",
-				["<C-v>"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical split" },
-				["<C-x>"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a horizontal split" },
-				["<Esc>"] = function() oil.close() end,
-			}
+				["<C-v>"] = {
+					"actions.select",
+					opts = { vertical = true },
+					desc = "Open the entry in a vertical split",
+				},
+				["<C-x>"] = {
+					"actions.select",
+					opts = { horizontal = true },
+					desc = "Open the entry in a horizontal split",
+				},
+				["<Esc>"] = function()
+					oil.close()
+				end,
+			},
 		})
 
 		vim.keymap.set("n", "-", oil.open, { desc = "Open parent directory" })
-		vim.keymap.set("n", "~", oil.toggle_float, { desc = "Open parent directory" })
-	end
+		vim.keymap.set("n", "<C-->", oil.toggle_float, { desc = "Open parent directory" })
+	end,
 }
