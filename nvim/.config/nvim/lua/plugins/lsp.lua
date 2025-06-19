@@ -83,7 +83,13 @@ return {
 			rust_analyzer = {
         enabled = true,
         filetypes = { "rust" },
-        settings = {}
+        settings = {
+          ["rust-analyzer"] = {
+            rustfmt = {
+              enabled = true
+            }
+          }
+        }
 			},
 		}
 
