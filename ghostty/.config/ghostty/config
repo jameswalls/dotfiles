@@ -1,4 +1,4 @@
-adjust-cell-height = 10
+adjust-cell-height = 1
 background-opacity = 0.8
 clipboard-paste-protection = false
 copy-on-select = clipboard
@@ -7,8 +7,9 @@ font-family = "JetBrains Mono"
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga
-font-size = 18
-macos-titlebar-style = tabs
+font-size = 21
+font-thicken = true
+macos-titlebar-style = hidden
 macos-window-shadow = false
 shell-integration-features = no-cursor
 theme = vesper
