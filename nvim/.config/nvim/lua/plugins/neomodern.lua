@@ -37,6 +37,7 @@ return {
 				TelescopeMatching = { fg = "#e67e80" },
 				TelescopeSelection = { bg = "#2a2a31" },
 				["@keyword.conditional"] = { fg = "#8a88db", fmt = "bold" },
+				["@keyword.exception"] = { fg = "#e67e80", fmt = "bold" },
 				["@boolean"] = { fg = "#cfa18c", fmt = "bold" },
 				["@lsp.type.macro"] = { fg = "#cfa18c", fmt = "none" },
 				["@lsp.type.lifetime"] = { fg = "#a8a6de", fmt = "none" },
