@@ -5,7 +5,7 @@ return {
 		{
 			"L3MON4D3/LuaSnip",
 			build = (function()
-				if vim.fn.has "win32" == 1 or vim.fn.executable "make" == 0 then
+				if vim.fn.has("win32") == 1 or vim.fn.executable("make") == 0 then
 					return
 				end
 				return "make install_jsregexp"
@@ -60,10 +60,10 @@ return {
 				end,
 			},
 			view = {
-				entries = { "custom" },
+				-- entries = { "custom" },
 			},
 			completion = {
-				completeopt = "menu,menuone,preview"
+				completeopt = "menu,menuone,preview",
 			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-u>"] = cmp.mapping.scroll_docs(-4),
@@ -71,26 +71,33 @@ return {
 				["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 				["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
 				["<C-Space>"] = cmp.mapping.complete(),
-				["<CR>"] = cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert}),
+				-- ["<CR>"] = cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert }),
+				["<CR>"] = function(fallback)
+					if cmp.visible() then
+						cmp.confirm()
+					else
+						fallback()
+					end
+				end,
 			}),
-      window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered()
-      },
+			window = {},
 			formatting = {
-				fields = { "kind", "abbr", "menu"},
+				fields = { "kind", "abbr", "menu" },
 				format = function(entry, vim_item)
 					vim_item.kind = cmp_kinds[vim_item.kind] or " "
-          vim_item.abbr = string.sub(vim_item.abbr, 1, 0.3 * vim.o.columns)
+					vim_item.abbr = string.sub(vim_item.abbr, 1, 0.3 * vim.o.columns)
 					vim_item.menu = cmp_menus[entry.source.name]
 					return vim_item
 				end,
 			},
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
-				{ name = "path"},
-				{ name = "nvim_lsp_signature_help" }
-			})
+				{ name = "path" },
+				{ name = "nvim_lsp_signature_help" },
+			}),
+			experimental = {
+				ghost_text = true,
+			},
 		})
-	end
+	end,
 }
