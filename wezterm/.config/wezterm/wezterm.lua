@@ -159,8 +159,8 @@ config.cell_width = 1.0
 config.window_padding = {
 	left = "1cell",
 	right = "1cell",
-	top = "0.1cell",
-	bottom = "0.1cell",
+	top = 0,
+	bottom = 0,
 }
 -- config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
