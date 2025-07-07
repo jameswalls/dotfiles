@@ -60,12 +60,12 @@ local function scheme_for_appearance(appearance, sync_os)
 	local scheme
 	if sync_os then
 		if appearance:find("Dark") then
-			scheme = "NvimDark"
+			scheme = "Vesper"
 		else
-			scheme = "NvimLight"
+			scheme = "Vesper"
 		end
 	else
-		scheme = "NvimDark"
+		scheme = "Vesper"
 	end
 	return scheme
 end
@@ -90,33 +90,23 @@ end
 
 local setup_background = function()
 	local username = capture_command_output("whoami")
-	local wallpaper_path = "/Users/" .. username .. "/.config/wezterm/wallpaper.jpg"
+	local wallpaper_path = "/Users/" .. username .. "/.config/wezterm/wallpaper.png"
 	local background = {}
-	local opacity
 	if file_exists(wallpaper_path) then
 		local background_image = {
 			source = {
 				File = wallpaper_path,
 			},
-			horizontal_align = "Right",
+			horizontal_align = "Center",
 		}
 		table.insert(background, background_image)
-
 		table.insert(background, {
 			source = {
 				Color = palette.background,
 			},
 			width = "100%",
 			height = "100%",
-		})
-	else
-		table.insert(background, {
-			source = {
-				Color = palette.background,
-			},
-			width = "100%",
-			height = "100%",
-			opacity = 0.95,
+			opacity = 0.90,
 		})
 	end
 	return background
@@ -162,9 +152,8 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
--- config.background = setup_background()
--- config.color_scheme = scheme_for_appearance(appearance, sync_os)
-config.color_scheme = "Vesper"
+config.background = setup_background()
+config.color_scheme = scheme_for_appearance(appearance, sync_os)
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
