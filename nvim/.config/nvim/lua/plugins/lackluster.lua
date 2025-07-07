@@ -13,7 +13,7 @@ end
 
 return {
 	"slugbyte/lackluster.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		local color = require("lackluster.color")
@@ -30,13 +30,13 @@ return {
 				-- NormalFloat = { bg = color.none },
 				VertSplit = { bg = color.gray2, fg = color.luster },
 				["@property.json"] = { fg = color.gray7 },
-				["@keyword"] = { bold = true },
-				["@keyword.exception"] = { bold = true },
-				["@keyword.return"] = { bold = true },
+				["@keyword"] = { fg = color.blue, bold = true },
+				["@keyword.exception"] = { fg = color.blue, bold = true },
+				["@keyword.return"] = { fg = color.blue, bold = true },
 				TelescopeMatching = { fg = color.orange, bold = true, italic = false },
 				-- TelescopeBorder = { bg = color.gray2 },
 				-- TelescopeNormal = { bg = color.gray2 },
-				-- TelescopeSelection = { bg = color.gray3 },
+				-- TelescopeSelection = { bg = color.gray4 },
 				TelescopeResultsNormal = { bg = color.none },
 				-- SignColumn = { bg = color.gray2 },
 				GitSignsAdd = { bg = color.gray2, fg = color.green },
