@@ -43,4 +43,4 @@ vim.o.termguicolors = true
 -- vim.api.nvim_set_hl(0, "TelescopeMatching", {fg="NvimLightYellow", bold=true})
 
 require("config.lazy")
-require('autocmds').setup()
+require("autocmds").setup()

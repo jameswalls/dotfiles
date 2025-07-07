@@ -22,6 +22,8 @@ return {
 				Cursor = { reverse = true },
 				CursorLineNr = { fg = "#ffffff", bold = true },
 				["@keyword.type"] = { fg = "#ffbd5e", italic = false },
+				Pmenu = { fg = "#ffffff", bg = "#16181a" },
+				NormalFloat = { fg = "#ffffff", bg = "#16181a" },
 			},
 		})
 
