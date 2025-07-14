@@ -21,11 +21,6 @@
       "before": [ "-" ],
       "commands": [ "workbench.files.action.showActiveFileInExplorer"]
     },
-    // add context to copilot
-    {
-      "before": [ "<leader>", "c" ],
-      "commands": [ "github.copilot.chat.attachSelection", "workbench.action.focusActiveEditorGroup" ]
-    },
     // jupyter navigation
     {
       "before": [ "<C-j>" ],
@@ -73,10 +68,9 @@
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": [ "<leader>", "c" ],
+      "before": [ "<leader>", "c", "s"],
       "commands": [ "github.copilot.chat.attachSelection", "workbench.action.focusActiveEditorGroup" ],
-      "after": [ "<Esc>" ]
-    }
+    },
   ],
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
