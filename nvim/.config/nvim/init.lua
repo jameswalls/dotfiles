@@ -38,9 +38,6 @@ vim.opt.cursorline = true
 vim.opt.confirm = true
 vim.o.termguicolors = true
 
--- vim.api.nvim_set_hl(0, "Normal", {})
--- vim.api.nvim_set_hl(0, "NormalFloat", {})
--- vim.api.nvim_set_hl(0, "TelescopeMatching", {fg="NvimLightYellow", bold=true})
-
 require("config.lazy")
-require("autocmds").setup()
+require("after").setup.autocmds()
+require("after").setup.colorscheme({ transparent = true })
