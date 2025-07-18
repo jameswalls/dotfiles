@@ -82,8 +82,8 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "Regular"
-		bold_weight = "Bold"
+		normal_weight = "Medium"
+		bold_weight = "ExtraBold"
 	end
 	return normal_weight, bold_weight
 end
@@ -143,7 +143,7 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 21
+config.font_size = 24
 config.line_height = 1.0
 config.cell_width = 1.0
 config.window_padding = {
