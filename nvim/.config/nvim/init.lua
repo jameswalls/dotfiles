@@ -40,4 +40,4 @@ vim.o.termguicolors = true
 
 require("config.lazy")
 require("after").setup.autocmds()
-require("after").setup.colorscheme({ transparent = true })
+-- require("after").setup.colorscheme({ transparent = true })
