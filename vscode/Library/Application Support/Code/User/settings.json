@@ -181,5 +181,6 @@
   "git.blame.editorDecoration.enabled": false,
   "git.blame.statusBarItem.enabled": true,
   "github.copilot.advanced": {},
-  "docker.extension.enableComposeLanguageServer": false
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }
