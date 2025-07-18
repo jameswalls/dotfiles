@@ -21,7 +21,8 @@ return {
 				FloatBorder = { fg = "#ffffff" },
 				Cursor = { reverse = true },
 				CursorLineNr = { fg = "#ffffff", bold = true },
-				["@keyword.type"] = { fg = "#ffbd5e", italic = false },
+				Keyword = { fg = "#ffbd5e", bold = true },
+				["@keyword.type"] = { fg = "#ffbd5e", italic = false, bold = true },
 			},
 		})
 
