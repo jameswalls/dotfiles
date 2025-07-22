@@ -13,6 +13,7 @@ vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
 vim.opt.ts = 4
 vim.opt.sw = 4
 vim.g.have_nerd_font = true
+vim.g.loaded_python3_provider = 0
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
