@@ -32,6 +32,14 @@ return {
 					require("conform").format({ bufnr = args.buf })
 				end,
 			})
+
+			vim.api.nvim_create_autocmd("BufWinEnter", {
+				callback = function()
+					if vim.wo.diff then
+						vim.keymap.set("n", "<C-n>", ":qa<Enter>", { buffer = true })
+					end
+				end,
+			})
 		end,
 		colorscheme = function(opts)
 			opts = opts or {}
