@@ -1,6 +1,6 @@
 return {
 	"cdmill/neomodern.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		require("neomodern").setup({
