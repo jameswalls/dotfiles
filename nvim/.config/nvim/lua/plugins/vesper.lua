@@ -1,8 +1,8 @@
 return {
 	"datsfilipe/vesper.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
-	config = function ()
+	config = function()
 		local colors = require("vesper.colors")
 		require("vesper").setup({
 			transparent = true,
@@ -17,21 +17,24 @@ return {
 				greenLight = colors.red,
 				green = colors.redDark,
 				red = colors.greenLight,
-				redDark = colors.green
+				redDark = colors.green,
 			},
 			overrides = {
-        Cursor = { reverse=true },
-        DiagnosticUnderlineError = {},
-        DiagnosticVirtualTextError = { fg=colors.hint },
-				Conditional = { fg=colors.borderDarker, bold=true },
-				CursorLineNr = { bg='none', bold=true },
-        NormalFloat = { bg = 'none' },
-				Statement = { fg=colors.borderDarker, bold=true },
-				TelescopeMatching = { fg=colors.red },
-				TelescopeSelection = { bg=colors.fgSelection },
-        VertSplit = { bg = 'none' },
+				Boolean = { fg = colors.redDark, bold = true },
+				Conditional = { fg = colors.borderDarker, bold = true },
+				Cursor = { reverse = true },
+				CursorLineNr = { bg = "none", bold = true },
+				DiagnosticUnderlineError = {},
+				DiagnosticVirtualTextError = { fg = colors.hint },
+				FloatBorder = { fg = colors.border },
+				NormalFloat = { bg = "none" },
+				Statement = { fg = colors.borderDarker, bold = true },
+				TelescopeBorder = { fg = colors.border },
+				TelescopeMatching = { fg = colors.red, bold = true },
+				TelescopeSelection = { bg = colors.fgSelection },
+				VertSplit = { fg = colors.border, bg = "none" },
 			},
 		})
 		vim.cmd.colorscheme("vesper")
-	end
+	end,
 }

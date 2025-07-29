@@ -9,7 +9,7 @@ return {
 			line_numbers = true,
 			multiline_threshold = 1, -- Maximum number of lines to show for a single context
 			trim_scope = "inner", -- Which context lines to discard if `max_lines` is exceeded. Choices: "inner", "outer"
-			mode = "topline",  -- Line used to calculate context. Choices: "cursor", "topline"
+			mode = "topline", -- Line used to calculate context. Choices: "cursor", "topline"
 			separator = "",
 			zindex = 20, -- The Z-index of the context window
 			on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
@@ -17,6 +17,6 @@ return {
 
 		vim.api.nvim_set_hl(0, "TreesitterContext", { link = "Normal" })
 		vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { link = "Normal" })
-		vim.api.nvim_set_hl(0, "TreesitterContextBottom", { underline=true})
-	end
+		vim.api.nvim_set_hl(0, "TreesitterContextBottom", { underline = true })
+	end,
 }
