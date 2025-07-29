@@ -92,12 +92,11 @@
       "~/.kube/mx-prod-cluster.yaml",
       "~/.kube/ke-prod-cluster.yaml",
       "~/.kube/rancher/ke-prod-cluster.yaml",
-      "~/.kube/ke-prod-cluster.yaml",
-      "~/.kube/config"
+      "~/.kube/ke-prod-cluster.yaml"
     ],
     "vs-kubernetes.kubeconfig": "~/.kube/config",
-    "vscode-kubernetes.helm-path-mac": "~/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.minikube-path-mac": "~/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.helm-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
     "vs-kubernetes.crd-code-completion": "disabled",
     "vs-kubernetes.minikube-show-information-expiration": "2025-04-15T19:07:50.952Z"
   },
