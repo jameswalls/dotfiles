@@ -1,5 +1,5 @@
 adjust-cell-height = 1
-background-opacity = 0.8
+background-opacity = 1
 clipboard-paste-protection = false
 copy-on-select = clipboard
 cursor-style = block
@@ -9,7 +9,7 @@ font-feature = -dlig
 font-feature = -liga
 font-size = 21
 font-thicken = true
-macos-titlebar-style = hidden
+macos-titlebar-style = tabs
 macos-window-shadow = false
 shell-integration-features = no-cursor
 theme = vesper
