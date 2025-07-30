@@ -4,7 +4,6 @@ return {
 	priority = 1000,
 	config = function()
 		local c = require("cyberdream.colors").default
-		local is_bold = false
 		require("cyberdream").setup({
 			variant = "default",
 			transparent = false,
@@ -19,13 +18,13 @@ return {
 				mini = true,
 			},
 			highlights = {
-				TelescopeMatching = { fg = c.red, bold = is_bold },
+				TelescopeMatching = { fg = c.pink, bold = true },
 				TelescopeBorder = { fg = c.grey },
 				FloatBorder = { fg = c.grey },
 				Cursor = { reverse = true },
-				CursorLineNr = { fg = "#ffffff", bold = is_bold },
-				Keyword = { fg = "#ffbd5e", bold = is_bold },
-				["@keyword.type"] = { fg = "#ffbd5e", italic = false, bold = is_bold },
+				CursorLineNr = { fg = "#ffffff" },
+				Keyword = { fg = "#ffbd5e" },
+				["@keyword.type"] = { fg = "#ffbd5e", italic = false },
 				PreProc = { fg = c.pink },
 				["@spell"] = { fg = c.grey },
 			},
