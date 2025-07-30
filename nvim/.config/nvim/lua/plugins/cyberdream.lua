@@ -6,7 +6,7 @@ return {
 		local c = require("cyberdream.colors").default
 		require("cyberdream").setup({
 			variant = "default",
-			transparent = false,
+			transparent = true,
 			italic_comments = false,
 			hide_fillchars = false,
 			borderless_pickers = false,
