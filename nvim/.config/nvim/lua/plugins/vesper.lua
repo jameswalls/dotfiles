@@ -1,9 +1,10 @@
 return {
 	"datsfilipe/vesper.nvim",
-	lazy = false,
+	lazy = true,
 	priority = 1000,
 	config = function()
 		local colors = require("vesper.colors")
+		local mix = require("vesper.utils").mix
 		require("vesper").setup({
 			transparent = true,
 			italics = {
@@ -14,9 +15,12 @@ return {
 				variables = false,
 			},
 			palette_overrides = {
+				fg = mix(colors.fg, "#000000", math.abs(0.70)),
+				white = mix(colors.white, "#000000", math.abs(0.70)),
 				greenLight = colors.red,
 				green = colors.redDark,
 				red = colors.greenLight,
+				comment = mix(colors.comment, "#000000", math.abs(0.45)),
 				redDark = colors.green,
 			},
 			overrides = {
@@ -28,7 +32,7 @@ return {
 				DiagnosticVirtualTextError = { fg = colors.hint },
 				FloatBorder = { fg = colors.border },
 				NormalFloat = { bg = "none" },
-				Statement = { fg = colors.borderDarker, bold = true },
+				Statement = { fg = mix(colors.primary, "#000000", 0.60), bold = true },
 				TelescopeBorder = { fg = colors.border },
 				TelescopeMatching = { fg = colors.red, bold = true },
 				TelescopeSelection = { bg = colors.fgSelection },
