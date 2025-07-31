@@ -143,7 +143,7 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 21
+config.font_size = 24
 config.line_height = 1.0
 config.cell_width = 1.0
 config.window_padding = {
