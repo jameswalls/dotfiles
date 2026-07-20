@@ -29,6 +29,10 @@ require("conform").setup({
 			command = "rustfmt",
 			args = { "--config-path", vim.fn.expand("~/.config/rustfmt/"), "--edition", "2024" },
 		},
+		jq = {
+			command = "jq",
+			args = { "--indent", "2" },
+		},
 	},
 	formatters_by_ft = {
 		lua = { "stylua" },
