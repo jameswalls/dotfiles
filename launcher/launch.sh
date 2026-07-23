@@ -15,8 +15,9 @@ launch_tmux_session() {
 }
 
 # Find all directories that contain a .git subdirectory, then use fzf for selection
-PROJECTS_DIR=~/projects
-git_path=$(fd -H -I --type d --prune '\.git$' $PROJECTS_DIR | xargs -I {} dirname {} | fzf)
+PROJECTS_DIR=$HOME/projects
+git_path=$(fd -H -I --type d --prune --min-depth 2 --max-depth 2 '\.git$' $PROJECTS_DIR | xargs -I {} dirname {} | fzf)
+
 
 # Check if a repository was selected
 if [ -z "$git_path" ]; then
