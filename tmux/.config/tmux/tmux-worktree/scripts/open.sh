@@ -12,7 +12,7 @@ path=$(
         --type d \
         --min-depth 2 \
         --max-depth 2 |
-    fzf --tmux 70% --prompt='worktree> ' --delimiter=/ --with-nth=-2
+    fzf --tmux 70% --prompt='worktree> ' --delimiter=/ --with-nth=-3..
 )
 
 [[ -z "$path" ]] && exit 0
