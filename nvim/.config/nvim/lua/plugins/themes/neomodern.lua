@@ -7,7 +7,7 @@ require("neomodern").setup({
 	-- 'alt' darker background
 	-- 'transparent' background is not set
 	bg = "alt",
-	theme = "roseprime", -- 'moon' | 'iceclimber' | 'gyokuro' | 'hojicha' | 'roseprime'
+	theme = "iceclimber", -- 'moon' | 'iceclimber' | 'gyokuro' | 'hojicha' | 'roseprime'
 	gutter = {
 		cursorline = false, -- highlight the cursorline in the gutter
 		dark = false, -- highlight gutter darker than the Normal bg
