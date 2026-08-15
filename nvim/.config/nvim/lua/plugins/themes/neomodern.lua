@@ -6,7 +6,7 @@ require("neomodern").setup({
 	-- 'default' default background
 	-- 'alt' darker background
 	-- 'transparent' background is not set
-	bg = "alt",
+	bg = "transparent",
 	theme = "iceclimber", -- 'moon' | 'iceclimber' | 'gyokuro' | 'hojicha' | 'roseprime'
 	gutter = {
 		cursorline = false, -- highlight the cursorline in the gutter
