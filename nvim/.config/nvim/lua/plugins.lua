@@ -14,5 +14,5 @@ require("plugins.telescope")
 require("plugins.treesitter")
 
 -- colorscheme must go at the end
-require("plugins.themes.cyberdream")
+require("plugins.themes.vesper")
 require("highlights")

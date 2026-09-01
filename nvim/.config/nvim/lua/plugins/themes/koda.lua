@@ -20,4 +20,4 @@ require("koda").setup({
 	colors = {},
 	on_highlights = function(_, _) end,
 })
-vim.cmd.colorscheme("koda")
+vim.cmd.colorscheme("koda-moss")
