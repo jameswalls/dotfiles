@@ -133,7 +133,7 @@ navigate_workspace_down = "j"
 
 [ui]
 # Sidebar width (auto-scaled based on workspace names, this sets the default)
-sidebar_width = 36
+sidebar_width = 30
 
 # Minimum sidebar width when expanded (columns)
 # sidebar_min_width = 18
